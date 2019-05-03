@@ -19,6 +19,7 @@
 		CCE1AEA1227AF1DD007DB341 /* Tokenisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE1AEA0227AF1DD007DB341 /* Tokenisation.swift */; };
 		CCE1AEA3227B02E3007DB341 /* A Christmas Carol.txt in Resources */ = {isa = PBXBuildFile; fileRef = CCE1AEA2227B02E2007DB341 /* A Christmas Carol.txt */; };
 		CCE1AEA5227B359A007DB341 /* TokenisationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE1AEA4227B359A007DB341 /* TokenisationTests.swift */; };
+		CCE1AEA7227C50B2007DB341 /* ChristmasCarol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE1AEA6227C50B2007DB341 /* ChristmasCarol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		CCE1AEA0227AF1DD007DB341 /* Tokenisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokenisation.swift; sourceTree = "<group>"; };
 		CCE1AEA2227B02E2007DB341 /* A Christmas Carol.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "A Christmas Carol.txt"; sourceTree = "<group>"; };
 		CCE1AEA4227B359A007DB341 /* TokenisationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenisationTests.swift; sourceTree = "<group>"; };
+		CCE1AEA6227C50B2007DB341 /* ChristmasCarol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasCarol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		CCE1AE6C227AE4DB007DB341 /* NLPTextSearch */ = {
 			isa = PBXGroup;
 			children = (
+				CCE1AEA8227C51E1007DB341 /* Model */,
 				CCE1AE6D227AE4DB007DB341 /* AppDelegate.swift */,
 				CCE1AE6F227AE4DB007DB341 /* ViewController.swift */,
 				CCE1AE71227AE4DB007DB341 /* Main.storyboard */,
@@ -116,7 +119,6 @@
 				CCE1AE74227AE4DB007DB341 /* NLPTextSearch.xcdatamodeld */,
 				CCE1AE9E227AE59B007DB341 /* Persistence.swift */,
 				CCE1AEA0227AF1DD007DB341 /* Tokenisation.swift */,
-				CCE1AEA2227B02E2007DB341 /* A Christmas Carol.txt */,
 			);
 			path = NLPTextSearch;
 			sourceTree = "<group>";
@@ -138,6 +140,15 @@
 				CCE1AE92227AE4DF007DB341 /* Info.plist */,
 			);
 			path = NLPTextSearchUITests;
+			sourceTree = "<group>";
+		};
+		CCE1AEA8227C51E1007DB341 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCE1AEA6227C50B2007DB341 /* ChristmasCarol.swift */,
+				CCE1AEA2227B02E2007DB341 /* A Christmas Carol.txt */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +285,7 @@
 			files = (
 				CCE1AE76227AE4DB007DB341 /* NLPTextSearch.xcdatamodeld in Sources */,
 				CCE1AE9F227AE59B007DB341 /* Persistence.swift in Sources */,
+				CCE1AEA7227C50B2007DB341 /* ChristmasCarol.swift in Sources */,
 				CCE1AEA1227AF1DD007DB341 /* Tokenisation.swift in Sources */,
 				CCE1AE70227AE4DB007DB341 /* ViewController.swift in Sources */,
 				CCE1AE6E227AE4DB007DB341 /* AppDelegate.swift in Sources */,

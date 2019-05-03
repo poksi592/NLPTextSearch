@@ -30,7 +30,7 @@ class TokenisationTests: XCTestCase {
     func test_collectLinguisticTokensChristmasCarol() {
         
         let tokenisation = Tokenisation()
-        let tokens = tokenisation.collectLinguisticTokens()
+        let tokens = tokenisation.collectLinguisticTokens(ChristmasCarolMessages.shared.christmasCarol())
         
         XCTAssertEqual(tokens.count, 788)
     }
