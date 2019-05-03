@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CCDDD543227C9F1900578E33 /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDDD542227C9F1900578E33 /* MessageListViewController.swift */; };
+		CCDDD545227CA24100578E33 /* MessageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDDD544227CA24100578E33 /* MessageListCell.swift */; };
 		CCE1AE6E227AE4DB007DB341 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE1AE6D227AE4DB007DB341 /* AppDelegate.swift */; };
-		CCE1AE70227AE4DB007DB341 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE1AE6F227AE4DB007DB341 /* ViewController.swift */; };
+		CCE1AE70227AE4DB007DB341 /* GenerateMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE1AE6F227AE4DB007DB341 /* GenerateMessagesViewController.swift */; };
 		CCE1AE73227AE4DB007DB341 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE1AE71227AE4DB007DB341 /* Main.storyboard */; };
 		CCE1AE76227AE4DB007DB341 /* NLPTextSearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCE1AE74227AE4DB007DB341 /* NLPTextSearch.xcdatamodeld */; };
 		CCE1AE78227AE4DE007DB341 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCE1AE77227AE4DE007DB341 /* Assets.xcassets */; };
@@ -40,9 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CCDDD542227C9F1900578E33 /* MessageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
+		CCDDD544227CA24100578E33 /* MessageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListCell.swift; sourceTree = "<group>"; };
 		CCE1AE6A227AE4DB007DB341 /* NLPTextSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NLPTextSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE1AE6D227AE4DB007DB341 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CCE1AE6F227AE4DB007DB341 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCE1AE6F227AE4DB007DB341 /* GenerateMessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateMessagesViewController.swift; sourceTree = "<group>"; };
 		CCE1AE72227AE4DB007DB341 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCE1AE75227AE4DB007DB341 /* NLPTextSearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NLPTextSearch.xcdatamodel; sourceTree = "<group>"; };
 		CCE1AE77227AE4DE007DB341 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,6 +90,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CCDDD540227C9DAE00578E33 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCE1AE6F227AE4DB007DB341 /* GenerateMessagesViewController.swift */,
+				CCE1AE71227AE4DB007DB341 /* Main.storyboard */,
+				CCDDD542227C9F1900578E33 /* MessageListViewController.swift */,
+				CCDDD544227CA24100578E33 /* MessageListCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CCDDD541227C9DED00578E33 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				CCE1AEA0227AF1DD007DB341 /* Tokenisation.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
 		CCE1AE61227AE4DA007DB341 = {
 			isa = PBXGroup;
 			children = (
@@ -109,16 +132,13 @@
 		CCE1AE6C227AE4DB007DB341 /* NLPTextSearch */ = {
 			isa = PBXGroup;
 			children = (
+				CCDDD541227C9DED00578E33 /* Logic */,
+				CCDDD540227C9DAE00578E33 /* View */,
 				CCE1AEA8227C51E1007DB341 /* Model */,
 				CCE1AE6D227AE4DB007DB341 /* AppDelegate.swift */,
-				CCE1AE6F227AE4DB007DB341 /* ViewController.swift */,
-				CCE1AE71227AE4DB007DB341 /* Main.storyboard */,
 				CCE1AE77227AE4DE007DB341 /* Assets.xcassets */,
 				CCE1AE79227AE4DE007DB341 /* LaunchScreen.storyboard */,
 				CCE1AE7C227AE4DE007DB341 /* Info.plist */,
-				CCE1AE74227AE4DB007DB341 /* NLPTextSearch.xcdatamodeld */,
-				CCE1AE9E227AE59B007DB341 /* Persistence.swift */,
-				CCE1AEA0227AF1DD007DB341 /* Tokenisation.swift */,
 			);
 			path = NLPTextSearch;
 			sourceTree = "<group>";
@@ -147,6 +167,8 @@
 			children = (
 				CCE1AEA6227C50B2007DB341 /* ChristmasCarol.swift */,
 				CCE1AEA2227B02E2007DB341 /* A Christmas Carol.txt */,
+				CCE1AE74227AE4DB007DB341 /* NLPTextSearch.xcdatamodeld */,
+				CCE1AE9E227AE59B007DB341 /* Persistence.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,11 +305,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCDDD543227C9F1900578E33 /* MessageListViewController.swift in Sources */,
+				CCDDD545227CA24100578E33 /* MessageListCell.swift in Sources */,
 				CCE1AE76227AE4DB007DB341 /* NLPTextSearch.xcdatamodeld in Sources */,
 				CCE1AE9F227AE59B007DB341 /* Persistence.swift in Sources */,
 				CCE1AEA7227C50B2007DB341 /* ChristmasCarol.swift in Sources */,
 				CCE1AEA1227AF1DD007DB341 /* Tokenisation.swift in Sources */,
-				CCE1AE70227AE4DB007DB341 /* ViewController.swift in Sources */,
+				CCE1AE70227AE4DB007DB341 /* GenerateMessagesViewController.swift in Sources */,
 				CCE1AE6E227AE4DB007DB341 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GenerateMessagesViewController.swift
 //  NLPTextSearch
 //
 //  Created by Mladen Despotovic on 02.05.19.
@@ -57,10 +57,19 @@ class GenerateMessagesViewController: UIViewController {
             let messageObject = Message(context: managedObjectContext)
             messageObject.messageID = Int32(messageNumber)
             messageObject.subject = "#" + String(messageNumber) + " " + subject
+            messageObject.content = message
             
         }
         Persistence.shared.saveContext()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "messageListSegue",
+            let messageListViewController = segue.destination as? MessageListViewController {
+            
+            messageListViewController.numberOfRows = Int(noOfMessages.text!)!
+        }
+    }
 }
 
