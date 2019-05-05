@@ -11,7 +11,7 @@ import Foundation
 class ChristmasCarolMessages {
     
     static let shared = ChristmasCarolMessages()
-    var tokenMessageDictionary: [String : Set<Int>]
+    var tokenMessageDictionary: [String : Set<Int32>]
     var tokens = [String]()
     let allChristmasCarolWords: [String]
     let tokenisation = Tokenisation()
@@ -20,10 +20,10 @@ class ChristmasCarolMessages {
         
         let christmasCarolText = ChristmasCarolMessages.christmasCarol()
         let linguisticTokens = tokenisation.collectLinguisticTokens(from: christmasCarolText)
-        let dictionary = linguisticTokens.reduce([String : Set<Int>](), { dict, token in
+        let dictionary = linguisticTokens.reduce([String : Set<Int32>](), { dict, token in
             
             var varDict = dict
-            varDict[token] = Set<Int>()
+            varDict[token] = Set<Int32>()
             return varDict
         })
         
@@ -94,7 +94,7 @@ extension ChristmasCarolMessages {
         tokenSet.forEach { token in
 
             var messageNumbers = tokenMessageDictionary[token]
-            messageNumbers?.insert(Int(message.messageID))
+            messageNumbers?.insert(Int32(message.messageID))
             tokenMessageDictionary[token] = messageNumbers
         }
     }

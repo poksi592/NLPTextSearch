@@ -14,8 +14,9 @@ class MessageListViewController: UITableViewController {
 
     var numberOfRows: Int?
     private(set) var messages = [Message]()
-    private(set) var searchedMessageIndexes = [Int]()
+    private(set) var searchedMessageIndexes = [Int32]()
     private(set) var fetchedResultsController: NSFetchedResultsController<Message>?
+    private(set) var fetchRequest: NSFetchRequest<Message> = Message.fetchRequest()
     
     var resultSearchController: UISearchController!
     
@@ -24,13 +25,13 @@ class MessageListViewController: UITableViewController {
         
         tableView.rowHeight = 120.0
         
+        setupSearchController()
         setupFetchResultsController()
     }
     
     func setupFetchResultsController() {
         
         let managedObjectContext = Persistence.shared.persistentContainer.viewContext
-        let fetchRequest: NSFetchRequest<Message> = Message.fetchRequest()
         fetchRequest.fetchLimit = 100
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "messageID", ascending: true)]
         
@@ -38,15 +39,13 @@ class MessageListViewController: UITableViewController {
                                                               managedObjectContext: managedObjectContext,
                                                               sectionNameKeyPath: nil,
                                                               cacheName: nil)
-        fetchMessages(fetchRequest: fetchRequest)
+        searchedMessageIndexes = Array<Int32>(0...Int32(ChristmasCarolMessages.shared.tokens.count-1))
+        fetchMessages()
     }
     
-    func fetchMessages(fetchRequest: NSFetchRequest<Message>) {
+    func fetchMessages() {
         
-        if searchedMessageIndexes.count > 0 {
-            fetchRequest.predicate = NSPredicate(format: "SELF.messageID contains[cd] ANY %K IN %@", 1)
-        }
-        
+        fetchRequest.predicate = NSPredicate(format: "SELF.messageID IN %@", searchedMessageIndexes)
         try! fetchedResultsController?.performFetch()
         numberOfRows = fetchedResultsController?.fetchedObjects?.count
         tableView.reloadData()
@@ -70,15 +69,17 @@ extension MessageListViewController: UISearchResultsUpdating {
                 }
             }
             
-            let resultMessages = foundTokens.reduce(Set<Int>(), { result, token in
+            print(foundTokens)
+            
+            let resultMessages = foundTokens.reduce(Set<Int32>(), { result, token in
                 
-                var varResult = result
                 let messageIndexes = ChristmasCarolMessages.shared.tokenMessageDictionary[token]
-                messageIndexes?.forEach { varResult.insert($0) }
-                return messageIndexes!
+                let newResult = result.union(messageIndexes!)
+                return newResult
             })
             
             searchedMessageIndexes = Array(resultMessages)
+            fetchMessages()
         }
     }
     
