@@ -12,6 +12,7 @@ class ChristmasCarolMessages {
     
     static let shared = ChristmasCarolMessages()
     var tokenMessageDictionary: [String : Set<Int>]
+    var tokens = [String]()
     let allChristmasCarolWords: [String]
     let tokenisation = Tokenisation()
     
@@ -27,6 +28,7 @@ class ChristmasCarolMessages {
         })
         
         self.tokenMessageDictionary = dictionary
+        self.tokens = dictionary.map { $0.key }
         self.allChristmasCarolWords = tokenisation.collectTokens(from: christmasCarolText)
     }
     
