@@ -56,9 +56,13 @@ extension MessageListViewController: UISearchResultsUpdating {
     
     func updateSearchResults(for searchController: UISearchController) {
         
-        if let searchPhrase = searchController.searchBar.text?.lowercased(),
-            searchPhrase.count > 0 {
-
+        guard let searchText = searchController.searchBar.text?.lowercased(),
+            searchText.count > 0 else { return }
+        
+        var searchedMessageIndexSet = Set<Int32>()
+        let searchPhrases = searchText.split(separator: " ")
+        searchPhrases.forEach {searchPhrase in
+            
             let foundTokens = ChristmasCarolMessages.shared.tokens.filter { token in
                 
                 if token.prefix(searchPhrase.count) == searchPhrase {
@@ -69,8 +73,6 @@ extension MessageListViewController: UISearchResultsUpdating {
                 }
             }
             
-            print(foundTokens)
-            
             let resultMessages = foundTokens.reduce(Set<Int32>(), { result, token in
                 
                 let messageIndexes = ChristmasCarolMessages.shared.tokenMessageDictionary[token]
@@ -78,9 +80,16 @@ extension MessageListViewController: UISearchResultsUpdating {
                 return newResult
             })
             
-            searchedMessageIndexes = Array(resultMessages)
-            fetchMessages()
+            if searchedMessageIndexSet.count > 0 {
+                searchedMessageIndexSet = searchedMessageIndexSet.intersection(resultMessages)
+            }
+            else {
+                searchedMessageIndexSet = resultMessages
+            }
         }
+        
+        searchedMessageIndexes = Array(searchedMessageIndexSet)
+        fetchMessages()
     }
     
     func setupSearchController() {
