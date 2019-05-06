@@ -10,15 +10,14 @@ import Foundation
 import UIKit
 import CoreData
 
-class MessageListViewController: UITableViewController {
+class MessageListViewController: UITableViewController, UISearchControllerDelegate, UISearchBarDelegate {
 
     var numberOfRows: Int?
     private(set) var messages = [Message]()
     private(set) var searchedMessageIndexes = [Int32]()
     private(set) var fetchedResultsController: NSFetchedResultsController<Message>?
     private(set) var fetchRequest: NSFetchRequest<Message> = Message.fetchRequest()
-    
-    var resultSearchController: UISearchController!
+    private(set) var searchPhrases = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +58,7 @@ class MessageListViewController: UITableViewController {
             
             messageDetailViewController.subjectText = messageCell.subjectLabel.text!
             messageDetailViewController.contentText = messageCell.contentLabel.text!
+            messageDetailViewController.searchPhrases = searchPhrases
         }
     }
 }
@@ -71,7 +71,7 @@ extension MessageListViewController: UISearchResultsUpdating {
             searchText.count > 0 else { return }
         
         var searchedMessageIndexSet = Set<Int32>()
-        let searchPhrases = searchText.split(separator: " ")
+        searchPhrases = searchText.split(separator: " ").map { String($0) }
         searchPhrases.forEach {searchPhrase in
             
             let foundTokens = ChristmasCarolMessages.shared.tokens.filter { token in
@@ -105,13 +105,13 @@ extension MessageListViewController: UISearchResultsUpdating {
     
     func setupSearchController() {
         
-        resultSearchController = UISearchController(searchResultsController: nil)
+        let resultSearchController = UISearchController(searchResultsController: nil)
         resultSearchController.searchResultsUpdater = self
         resultSearchController.hidesNavigationBarDuringPresentation = false
         resultSearchController.dimsBackgroundDuringPresentation = false
         resultSearchController.searchBar.searchBarStyle = UISearchBar.Style.prominent
         resultSearchController.searchBar.sizeToFit()
-        self.tableView.tableHeaderView = resultSearchController.searchBar
+        self.navigationItem.searchController  = resultSearchController
     }
 }
 
