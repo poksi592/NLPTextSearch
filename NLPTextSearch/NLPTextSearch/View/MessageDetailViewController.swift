@@ -74,16 +74,15 @@ class MessageDetailViewController: UIViewController {
                 if range.location >= 0 {
                     stringMinusOne = (attrString.string as NSString).substring(with: rangeMinusOne)
                 }
-                if range.location != NSNotFound,
-                    range.location == 0 || stringMinusOne == " " {
+                if range.location != NSNotFound && (range.location == 0 || stringMinusOne == " ") {
                     
                     attrString.addAttribute(NSAttributedString.Key.backgroundColor,
                                             value: UIColor.cyan,
                                             range: NSRange(location: range.location,
                                                            length: searchLength))
-                    range = NSRange(location: range.location + range.length,
-                                    length: inputLength - (range.location + range.length))
                 }
+                range = NSRange(location: range.location + range.length,
+                                length: inputLength - (range.location + range.length))
             }
         }
         return NSAttributedString(attributedString: attrString)
