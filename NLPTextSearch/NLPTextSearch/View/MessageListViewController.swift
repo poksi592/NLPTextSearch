@@ -50,6 +50,17 @@ class MessageListViewController: UITableViewController {
         numberOfRows = fetchedResultsController?.fetchedObjects?.count
         tableView.reloadData()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "messageDetailSegue",
+            let messageDetailViewController = segue.destination as? MessageDetailViewController,
+            let messageCell = sender as? MessageListCell {
+            
+            messageDetailViewController.subjectText = messageCell.subjectLabel.text!
+            messageDetailViewController.contentText = messageCell.contentLabel.text!
+        }
+    }
 }
 
 extension MessageListViewController: UISearchResultsUpdating {
@@ -125,5 +136,11 @@ extension MessageListViewController {
         cell.subjectLabel?.text = message.subject
         cell.contentLabel?.text = message.content
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let selectedCell = tableView.cellForRow(at: indexPath) as! MessageListCell
+        performSegue(withIdentifier: "messageDetailSegue", sender: selectedCell)
     }
 }
