@@ -133,8 +133,14 @@ extension MessageListViewController {
             fatalError("Attempt to configure cell without a managed object")
         }
         
-        cell.subjectLabel?.text = message.subject
-        cell.contentLabel?.text = message.content
+        cell.subjectLabel?.attributedText = message.subject?.tag(phrases: searchPhrases,
+                                                                 size: 22.0,
+                                                                 bold: true,
+                                                                 color: UIColor.cyan)
+        cell.contentLabel?.attributedText = message.content?.tag(phrases: searchPhrases,
+                                                                 size: 18.0,
+                                                                 bold: false,
+                                                                 color: UIColor.cyan)
         return cell
     }
     

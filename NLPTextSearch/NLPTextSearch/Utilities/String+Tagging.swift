@@ -1,48 +1,22 @@
 //
-//  MessageDetailViewController.swift
+//  String+Tagging.swift
 //  NLPTextSearch
 //
-//  Created by Mladen Despotovic on 05.05.19.
+//  Created by Mladen Despotovic on 07.05.19.
 //  Copyright © 2019 Mladen Despotovic. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class MessageDetailViewController: UIViewController {
+extension String {
     
-    var subjectText = ""
-    var contentText = ""
-    var searchPhrases = [String]()
-    
-    @IBOutlet weak var subject: UILabel!
-    @IBOutlet weak var content: UITextView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        subject.attributedText = subjectText.tag(phrases: searchPhrases,
-                                                 size: 24.0,
-                                                 bold: true,
-                                                 color: UIColor.cyan)
-        content.attributedText = contentText.tag(phrases: searchPhrases,
-                                                 size: 20.0,
-                                                 bold: true,
-                                                 color: UIColor.cyan)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        
-        self.navigationController?.navigationItem.searchController?.isActive = false
-        super.viewWillDisappear(animated)
-    }
-    
-    func tag(string: String,
-             phrases: [String],
+    func tag(phrases: [String],
              size: CGFloat,
-             bold: Bool) -> NSAttributedString {
+             bold: Bool,
+             color: UIColor) -> NSAttributedString {
         
-        let attrString = NSMutableAttributedString(string: string)
+        let attrString = NSMutableAttributedString(string: self)
         let range = NSRange(location: 0, length: attrString.length)
         
         // Font Size
@@ -50,15 +24,15 @@ class MessageDetailViewController: UIViewController {
         attrString.addAttribute(NSAttributedString.Key.font,
                                 value: font,
                                 range: NSRange(location: range.location,
-                                               length: string.count))
+                                               length: self.count))
         attrString.addAttribute(NSAttributedString.Key.font,
                                 value: font,
                                 range: NSRange(location: range.location,
-                                               length: string.count))
+                                               length: self.count))
         
         
         let inputLength = attrString.string.count
-
+        
         for phrase in phrases {
             let searchLength = phrase.count
             var range = NSRange(location: 0, length: attrString.length)
@@ -77,7 +51,7 @@ class MessageDetailViewController: UIViewController {
                 if range.location != NSNotFound && (range.location == 0 || stringMinusOne == " ") {
                     
                     attrString.addAttribute(NSAttributedString.Key.backgroundColor,
-                                            value: UIColor.cyan,
+                                            value: color,
                                             range: NSRange(location: range.location,
                                                            length: searchLength))
                 }

@@ -10,6 +10,7 @@
 		CCDDD543227C9F1900578E33 /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDDD542227C9F1900578E33 /* MessageListViewController.swift */; };
 		CCDDD545227CA24100578E33 /* MessageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDDD544227CA24100578E33 /* MessageListCell.swift */; };
 		CCDDD549227F614C00578E33 /* MessageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDDD548227F614C00578E33 /* MessageDetailViewController.swift */; };
+		CCDDD54C22817CCA00578E33 /* String+Tagging.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDDD54B22817CCA00578E33 /* String+Tagging.swift */; };
 		CCE1AE6E227AE4DB007DB341 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE1AE6D227AE4DB007DB341 /* AppDelegate.swift */; };
 		CCE1AE70227AE4DB007DB341 /* GenerateMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE1AE6F227AE4DB007DB341 /* GenerateMessagesViewController.swift */; };
 		CCE1AE73227AE4DB007DB341 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE1AE71227AE4DB007DB341 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		CCDDD542227C9F1900578E33 /* MessageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
 		CCDDD544227CA24100578E33 /* MessageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListCell.swift; sourceTree = "<group>"; };
 		CCDDD548227F614C00578E33 /* MessageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailViewController.swift; sourceTree = "<group>"; };
+		CCDDD54B22817CCA00578E33 /* String+Tagging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Tagging.swift"; sourceTree = "<group>"; };
 		CCE1AE6A227AE4DB007DB341 /* NLPTextSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NLPTextSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE1AE6D227AE4DB007DB341 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCE1AE6F227AE4DB007DB341 /* GenerateMessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateMessagesViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,14 @@
 			path = Logic;
 			sourceTree = "<group>";
 		};
+		CCDDD54A22817C9500578E33 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CCDDD54B22817CCA00578E33 /* String+Tagging.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		CCE1AE61227AE4DA007DB341 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +145,7 @@
 		CCE1AE6C227AE4DB007DB341 /* NLPTextSearch */ = {
 			isa = PBXGroup;
 			children = (
+				CCDDD54A22817C9500578E33 /* Utilities */,
 				CCDDD541227C9DED00578E33 /* Logic */,
 				CCDDD540227C9DAE00578E33 /* View */,
 				CCE1AEA8227C51E1007DB341 /* Model */,
@@ -308,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCDDD54C22817CCA00578E33 /* String+Tagging.swift in Sources */,
 				CCDDD543227C9F1900578E33 /* MessageListViewController.swift in Sources */,
 				CCDDD545227CA24100578E33 /* MessageListCell.swift in Sources */,
 				CCDDD549227F614C00578E33 /* MessageDetailViewController.swift in Sources */,
