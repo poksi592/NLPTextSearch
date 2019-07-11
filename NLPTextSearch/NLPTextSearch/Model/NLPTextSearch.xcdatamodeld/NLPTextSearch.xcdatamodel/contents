@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.98" systemVersion="18E226" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Message" representedClassName="Message" syncable="YES" codeGenerationType="class">
-        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="messageID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="subject" optional="YES" attributeType="String" syncable="YES"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14838.16" systemVersion="18F203" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="NO" userDefinedModelVersionIdentifier="">
+    <entity name="Index" representedClassName="Index" syncable="YES">
+        <attribute name="token" optional="YES" attributeType="String"/>
+        <relationship name="indexedMessages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="IndexedMessages" inverseName="index" inverseEntity="IndexedMessages"/>
+    </entity>
+    <entity name="IndexedMessages" representedClassName="IndexedMessages" syncable="YES">
+        <attribute name="messageID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="index" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Index" inverseName="indexedMessages" inverseEntity="Index"/>
+    </entity>
+    <entity name="Message" representedClassName="Message" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="messageID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="subject" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Message" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Index" positionX="-63" positionY="9" width="128" height="73"/>
+        <element name="IndexedMessages" positionX="-54" positionY="18" width="128" height="73"/>
+        <element name="Message" positionX="-63" positionY="-18" width="128" height="88"/>
     </elements>
 </model>

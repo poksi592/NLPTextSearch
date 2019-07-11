@@ -14,9 +14,9 @@ class MessageListViewController: UITableViewController, UISearchControllerDelega
 
     var numberOfRows: Int?
     private(set) var messages = [Message]()
-    private(set) var searchedMessageIndexes = [Int32]()
-    private(set) var fetchedResultsController: NSFetchedResultsController<Message>?
-    private(set) var fetchRequest: NSFetchRequest<Message> = Message.fetchRequest()
+    private(set) var searchedMessageIndexes = [Int64]()
+    private(set) var messageFetchedResultsController: NSFetchedResultsController<Message>?
+    private(set) var messageFetchRequest: NSFetchRequest<Message> = Message.fetchRequest()
     private(set) var searchPhrases = [String]()
     
     override func viewDidLoad() {
@@ -31,22 +31,22 @@ class MessageListViewController: UITableViewController, UISearchControllerDelega
     func setupFetchResultsController() {
         
         let managedObjectContext = Persistence.shared.persistentContainer.viewContext
-        fetchRequest.fetchLimit = 100
-        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "messageID", ascending: true)]
+        messageFetchRequest.fetchLimit = 100
+        messageFetchRequest.sortDescriptors = [NSSortDescriptor(key: "messageID", ascending: true)]
         
-        fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest,
-                                                              managedObjectContext: managedObjectContext,
-                                                              sectionNameKeyPath: nil,
-                                                              cacheName: nil)
-        searchedMessageIndexes = Array<Int32>(0...Int32(ChristmasCarolMessages.shared.tokens.count-1))
+        messageFetchedResultsController = NSFetchedResultsController(fetchRequest: messageFetchRequest,
+                                                                     managedObjectContext: managedObjectContext,
+                                                                     sectionNameKeyPath: nil,
+                                                                     cacheName: nil)
+        searchedMessageIndexes = Array<Int64>(0...Int64(ChristmasCarolMessages.shared.tokens.count-1))
         fetchMessages()
     }
     
     func fetchMessages() {
         
-        fetchRequest.predicate = NSPredicate(format: "SELF.messageID IN %@", searchedMessageIndexes)
-        try! fetchedResultsController?.performFetch()
-        numberOfRows = fetchedResultsController?.fetchedObjects?.count
+        messageFetchRequest.predicate = NSPredicate(format: "SELF.messageID IN %@", searchedMessageIndexes)
+        try! messageFetchedResultsController?.performFetch()
+        numberOfRows = messageFetchedResultsController?.fetchedObjects?.count
         tableView.reloadData()
     }
     
@@ -70,36 +70,8 @@ extension MessageListViewController: UISearchResultsUpdating {
         guard let searchText = searchController.searchBar.text?.lowercased(),
             searchText.count > 0 else { return }
         
-        var searchedMessageIndexSet = Set<Int32>()
         searchPhrases = searchText.split(separator: " ").map { String($0) }
-        searchPhrases.forEach {searchPhrase in
-            
-            let foundTokens = ChristmasCarolMessages.shared.tokens.filter { token in
-                
-                if token.prefix(searchPhrase.count) == searchPhrase {
-                    return true
-                }
-                else {
-                    return false
-                }
-            }
-            
-            let resultMessages = foundTokens.reduce(Set<Int32>(), { result, token in
-                
-                let messageIndexes = ChristmasCarolMessages.shared.tokenMessageDictionary[token]
-                let newResult = result.union(messageIndexes!)
-                return newResult
-            })
-            
-            if searchedMessageIndexSet.count > 0 {
-                searchedMessageIndexSet = searchedMessageIndexSet.intersection(resultMessages)
-            }
-            else {
-                searchedMessageIndexSet = resultMessages
-            }
-        }
-        
-        searchedMessageIndexes = Array(searchedMessageIndexSet)
+        searchedMessageIndexes = mailIds(forPhrases: searchPhrases)
         fetchMessages()
     }
     
@@ -108,10 +80,32 @@ extension MessageListViewController: UISearchResultsUpdating {
         let resultSearchController = UISearchController(searchResultsController: nil)
         resultSearchController.searchResultsUpdater = self
         resultSearchController.hidesNavigationBarDuringPresentation = false
-        resultSearchController.dimsBackgroundDuringPresentation = false
+        resultSearchController.obscuresBackgroundDuringPresentation = false
         resultSearchController.searchBar.searchBarStyle = UISearchBar.Style.prominent
         resultSearchController.searchBar.sizeToFit()
         self.navigationItem.searchController  = resultSearchController
+    }
+    
+    func mailIds(forPhrases phrases:[String]) -> [Int64] {
+        
+        let managedObjectContext = Persistence.shared.persistentContainer.viewContext
+        let indexesFetchRequest: NSFetchRequest<Index> = Index.fetchRequest()
+        var predicates = [NSPredicate]()
+        for phrase in phrases {
+            predicates.append(NSPredicate(format: "SELF.token BEGINSWITH %@", phrase))
+        }
+        
+        indexesFetchRequest.predicate = NSCompoundPredicate(orPredicateWithSubpredicates: predicates)
+        let indexes = try! managedObjectContext.fetch(indexesFetchRequest)
+        
+        var mailIDs = Set<Int64>()
+        indexes.forEach { index in
+
+            for indexedMessage in index.indexedMessages ?? Set<IndexedMessages>() {
+                mailIDs.update(with: indexedMessage.messageID)
+            }
+        }
+        return Array(mailIDs)
     }
 }
 
@@ -129,7 +123,7 @@ extension MessageListViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MessageListCell", for: indexPath) as! MessageListCell
         
-        guard let message = fetchedResultsController?.object(at: indexPath) else {
+        guard let message = messageFetchedResultsController?.object(at: indexPath) else {
             fatalError("Attempt to configure cell without a managed object")
         }
         

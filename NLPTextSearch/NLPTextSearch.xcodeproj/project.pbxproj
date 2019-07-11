@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CCADA9AB22D396470092151C /* 10000_Words.txt in Resources */ = {isa = PBXBuildFile; fileRef = CCADA9AA22D396470092151C /* 10000_Words.txt */; };
+		CCADA9CA22D789790092151C /* IndexedMessages+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCADA9C422D789790092151C /* IndexedMessages+CoreDataClass.swift */; };
+		CCADA9CB22D789790092151C /* IndexedMessages+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCADA9C522D789790092151C /* IndexedMessages+CoreDataProperties.swift */; };
+		CCADA9CC22D789790092151C /* Message+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCADA9C622D789790092151C /* Message+CoreDataClass.swift */; };
+		CCADA9CD22D789790092151C /* Message+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCADA9C722D789790092151C /* Message+CoreDataProperties.swift */; };
+		CCADA9CE22D789790092151C /* Index+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCADA9C822D789790092151C /* Index+CoreDataClass.swift */; };
+		CCADA9CF22D789790092151C /* Index+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCADA9C922D789790092151C /* Index+CoreDataProperties.swift */; };
 		CCDDD543227C9F1900578E33 /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDDD542227C9F1900578E33 /* MessageListViewController.swift */; };
 		CCDDD545227CA24100578E33 /* MessageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDDD544227CA24100578E33 /* MessageListCell.swift */; };
 		CCDDD549227F614C00578E33 /* MessageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDDD548227F614C00578E33 /* MessageDetailViewController.swift */; };
@@ -44,6 +51,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CCADA9AA22D396470092151C /* 10000_Words.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = 10000_Words.txt; sourceTree = "<group>"; };
+		CCADA9C422D789790092151C /* IndexedMessages+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "IndexedMessages+CoreDataClass.swift"; path = "NLPTextSearch/Model/Core Data/IndexedMessages+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CCADA9C522D789790092151C /* IndexedMessages+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "IndexedMessages+CoreDataProperties.swift"; path = "NLPTextSearch/Model/Core Data/IndexedMessages+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CCADA9C622D789790092151C /* Message+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Message+CoreDataClass.swift"; path = "NLPTextSearch/Model/Core Data/Message+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CCADA9C722D789790092151C /* Message+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Message+CoreDataProperties.swift"; path = "NLPTextSearch/Model/Core Data/Message+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CCADA9C822D789790092151C /* Index+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Index+CoreDataClass.swift"; path = "NLPTextSearch/Model/Core Data/Index+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CCADA9C922D789790092151C /* Index+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Index+CoreDataProperties.swift"; path = "NLPTextSearch/Model/Core Data/Index+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CCDDD542227C9F1900578E33 /* MessageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
 		CCDDD544227CA24100578E33 /* MessageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListCell.swift; sourceTree = "<group>"; };
 		CCDDD548227F614C00578E33 /* MessageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +139,12 @@
 		CCE1AE61227AE4DA007DB341 = {
 			isa = PBXGroup;
 			children = (
+				CCADA9C422D789790092151C /* IndexedMessages+CoreDataClass.swift */,
+				CCADA9C522D789790092151C /* IndexedMessages+CoreDataProperties.swift */,
+				CCADA9C622D789790092151C /* Message+CoreDataClass.swift */,
+				CCADA9C722D789790092151C /* Message+CoreDataProperties.swift */,
+				CCADA9C822D789790092151C /* Index+CoreDataClass.swift */,
+				CCADA9C922D789790092151C /* Index+CoreDataProperties.swift */,
 				CCE1AE6C227AE4DB007DB341 /* NLPTextSearch */,
 				CCE1AE84227AE4DF007DB341 /* NLPTextSearchTests */,
 				CCE1AE8F227AE4DF007DB341 /* NLPTextSearchUITests */,
@@ -183,6 +203,7 @@
 				CCE1AEA2227B02E2007DB341 /* A Christmas Carol.txt */,
 				CCE1AE74227AE4DB007DB341 /* NLPTextSearch.xcdatamodeld */,
 				CCE1AE9E227AE59B007DB341 /* Persistence.swift */,
+				CCADA9AA22D396470092151C /* 10000_Words.txt */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -292,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCE1AE7B227AE4DE007DB341 /* LaunchScreen.storyboard in Resources */,
+				CCADA9AB22D396470092151C /* 10000_Words.txt in Resources */,
 				CCE1AE78227AE4DE007DB341 /* Assets.xcassets in Resources */,
 				CCE1AE73227AE4DB007DB341 /* Main.storyboard in Resources */,
 				CCE1AEA3227B02E3007DB341 /* A Christmas Carol.txt in Resources */,
@@ -319,14 +341,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCADA9CE22D789790092151C /* Index+CoreDataClass.swift in Sources */,
 				CCDDD54C22817CCA00578E33 /* String+Tagging.swift in Sources */,
 				CCDDD543227C9F1900578E33 /* MessageListViewController.swift in Sources */,
 				CCDDD545227CA24100578E33 /* MessageListCell.swift in Sources */,
 				CCDDD549227F614C00578E33 /* MessageDetailViewController.swift in Sources */,
+				CCADA9CD22D789790092151C /* Message+CoreDataProperties.swift in Sources */,
 				CCE1AE76227AE4DB007DB341 /* NLPTextSearch.xcdatamodeld in Sources */,
 				CCE1AE9F227AE59B007DB341 /* Persistence.swift in Sources */,
 				CCE1AEA7227C50B2007DB341 /* ChristmasCarol.swift in Sources */,
+				CCADA9CB22D789790092151C /* IndexedMessages+CoreDataProperties.swift in Sources */,
+				CCADA9CC22D789790092151C /* Message+CoreDataClass.swift in Sources */,
 				CCE1AEA1227AF1DD007DB341 /* Tokenisation.swift in Sources */,
+				CCADA9CF22D789790092151C /* Index+CoreDataProperties.swift in Sources */,
+				CCADA9CA22D789790092151C /* IndexedMessages+CoreDataClass.swift in Sources */,
 				CCE1AE70227AE4DB007DB341 /* GenerateMessagesViewController.swift in Sources */,
 				CCE1AE6E227AE4DB007DB341 /* AppDelegate.swift in Sources */,
 			);

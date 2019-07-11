@@ -11,7 +11,7 @@ import Foundation
 class ChristmasCarolMessages {
     
     static let shared = ChristmasCarolMessages()
-    var tokenMessageDictionary: [String : Set<Int32>]
+    var tokenMessageDictionary: [String : Set<Int64>]
     var tokens = [String]()
     let allChristmasCarolWords: [String]
     let tokenisation = Tokenisation()
@@ -20,10 +20,10 @@ class ChristmasCarolMessages {
         
         let christmasCarolText = ChristmasCarolMessages.christmasCarol()
         let linguisticTokens = tokenisation.collectLinguisticTokens(from: christmasCarolText)
-        let dictionary = linguisticTokens.reduce([String : Set<Int32>](), { dict, token in
+        let dictionary = linguisticTokens.reduce([String : Set<Int64>](), { dict, token in
             
             var varDict = dict
-            varDict[token] = Set<Int32>()
+            varDict[token] = Set<Int64>()
             return varDict
         })
         
@@ -34,7 +34,7 @@ class ChristmasCarolMessages {
     
     private class func christmasCarol() -> String {
         
-        let filepath = Bundle.main.path(forResource: "A Christmas Carol", ofType: "txt")
+        let filepath = Bundle.main.path(forResource: "10000_Words", ofType: "txt")
         let url = URL(fileURLWithPath: filepath!)
         return try! String(contentsOf: url)
     }
@@ -53,6 +53,18 @@ extension ChristmasCarolMessages {
         managedObjectContext.performAndWait {
             for message in allMessages {
                 managedObjectContext.delete(message)
+            }
+        }
+        let allIndexes = try! managedObjectContext.fetch(Index.fetchRequest()) as! [Index]
+        managedObjectContext.performAndWait {
+            for index in allIndexes {
+                managedObjectContext.delete(index)
+            }
+        }
+        let allIndexedMessages = try! managedObjectContext.fetch(IndexedMessages.fetchRequest()) as! [IndexedMessages]
+        managedObjectContext.performAndWait {
+            for indexedMessages in allIndexedMessages {
+                managedObjectContext.delete(indexedMessages)
             }
         }
         Persistence.shared.saveContext()
@@ -76,13 +88,42 @@ extension ChristmasCarolMessages {
             }
             
             let messageObject = Message(context: managedObjectContext)
-            messageObject.messageID = Int32(messageNumber)
+            messageObject.messageID = Int64(messageNumber)
             messageObject.subject = "#" + String(messageNumber) + " " + subject
             messageObject.content = message
             
             tokenizeMessage(messageObject)
         }
+        
+        tokenMessageDictionary.forEach { (key, value) in
+            
+            let indexObject = Index(context: managedObjectContext)
+            indexObject.token = key
+            
+            value.forEach { messageId in
+                
+                let indexedMessages = IndexedMessages(context: managedObjectContext)
+                indexedMessages.messageID = messageId
+                indexObject.addToIndexedMessages(indexedMessages)
+            }
+        }
+        
         Persistence.shared.saveContext()
+        
+        let encoder = JSONEncoder()
+        let jsonData = try! encoder.encode(tokenMessageDictionary)
+        let size = jsonData.count
+        print("Word count in dictionary: \(tokenMessageDictionary.count)")
+        print("Size in bytes: \(size)")
+        let persistentStore = Persistence.shared.persistentContainer.persistentStoreCoordinator.persistentStores.first
+        let url = Persistence.shared.persistentContainer.persistentStoreCoordinator.url(for: persistentStore!)
+        print("Persistent store URL: \(url.relativeString)")
+        
+//        let attribute = try! FileManager.default.attributesOfItem(atPath: url.relativeString)
+//        let sizeULongLong = attribute[FileAttributeKey.size] as! NSNumber
+//        let sizeMb = sizeULongLong.doubleValue / 1000000.0
+//    
+//        print("Size of Persistent Store in Mb: \(sizeMb)")
     }
     
     func tokenizeMessage(_ message: Message) {
@@ -94,7 +135,7 @@ extension ChristmasCarolMessages {
         tokenSet.forEach { token in
 
             var messageNumbers = tokenMessageDictionary[token]
-            messageNumbers?.insert(Int32(message.messageID))
+            messageNumbers?.insert(Int64(message.messageID))
             tokenMessageDictionary[token] = messageNumbers
         }
     }
