@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yks-uI-mKr">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yks-uI-mKr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -108,7 +106,7 @@
                                 <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="de5-tX-7Gx" id="gyW-4S-jCx">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="119.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTR-dn-h3l">
@@ -121,19 +119,28 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cu-in-cSv">
-                                            <rect key="frame" x="15" y="44" width="384" height="65.5"/>
+                                            <rect key="frame" x="15" y="44" width="342" height="66"/>
                                             <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="attachment" translatesAutoresizingMaskIntoConstraints="NO" id="nLE-Bx-ahg">
+                                            <rect key="frame" x="367" y="44" width="32" height="32"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="32" id="3D8-M3-QA5"/>
+                                                <constraint firstAttribute="height" constant="32" id="8Ht-Of-FyN"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="nLE-Bx-ahg" secondAttribute="trailing" constant="15" id="6Wh-or-CAG"/>
                                         <constraint firstItem="pTR-dn-h3l" firstAttribute="top" secondItem="gyW-4S-jCx" secondAttribute="top" constant="10" id="CTi-5Q-Thx"/>
-                                        <constraint firstItem="4cu-in-cSv" firstAttribute="leading" secondItem="gyW-4S-jCx" secondAttribute="leading" constant="15" id="LM8-Ph-1sl"/>
+                                        <constraint firstItem="4cu-in-cSv" firstAttribute="leading" secondItem="gyW-4S-jCx" secondAttribute="leading" constant="15" id="DyG-Ag-f8p"/>
                                         <constraint firstItem="pTR-dn-h3l" firstAttribute="leading" secondItem="gyW-4S-jCx" secondAttribute="leading" constant="15" id="O7L-rl-t9U"/>
+                                        <constraint firstItem="nLE-Bx-ahg" firstAttribute="leading" secondItem="4cu-in-cSv" secondAttribute="trailing" constant="10" id="Pqx-i6-KZC"/>
+                                        <constraint firstItem="nLE-Bx-ahg" firstAttribute="centerY" secondItem="gyW-4S-jCx" secondAttribute="centerY" id="YPk-gT-k6j"/>
                                         <constraint firstAttribute="trailing" secondItem="pTR-dn-h3l" secondAttribute="trailing" constant="15" id="ZyD-rV-fRA"/>
-                                        <constraint firstAttribute="trailing" secondItem="4cu-in-cSv" secondAttribute="trailing" constant="15" id="g41-qJ-k4G"/>
                                         <constraint firstAttribute="bottom" secondItem="4cu-in-cSv" secondAttribute="bottom" constant="10" id="hNh-5C-5Zf"/>
                                         <constraint firstItem="4cu-in-cSv" firstAttribute="top" secondItem="pTR-dn-h3l" secondAttribute="bottom" constant="6" id="pNX-fJ-PNf"/>
                                     </constraints>
@@ -207,4 +214,7 @@
             <point key="canvasLocation" x="1671.0144927536232" y="88.392857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="attachment" width="512" height="512"/>
+    </resources>
 </document>

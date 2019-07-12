@@ -9,6 +9,7 @@
         <relationship name="index" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Index" inverseName="indexedMessages" inverseEntity="Index"/>
     </entity>
     <entity name="Message" representedClassName="Message" syncable="YES">
+        <attribute name="attachment" optional="YES" attributeType="String"/>
         <attribute name="content" optional="YES" attributeType="String"/>
         <attribute name="messageID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="subject" optional="YES" attributeType="String"/>
@@ -16,6 +17,6 @@
     <elements>
         <element name="Index" positionX="-63" positionY="9" width="128" height="73"/>
         <element name="IndexedMessages" positionX="-54" positionY="18" width="128" height="73"/>
-        <element name="Message" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="Message" positionX="-63" positionY="-18" width="128" height="28"/>
     </elements>
 </model>
