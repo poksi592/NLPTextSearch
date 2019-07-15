@@ -30,29 +30,10 @@
 		CCADAA0022D8A6AB0092151C /* Bildschirmfoto 2019-05-17 um 13.51.02.png in Resources */ = {isa = PBXBuildFile; fileRef = CCADA9E622D8A6AB0092151C /* Bildschirmfoto 2019-05-17 um 13.51.02.png */; };
 		CCADAA0122D8A6AB0092151C /* idiots-idiots-everywhere-made-on-imgur-22227665.png in Resources */ = {isa = PBXBuildFile; fileRef = CCADA9E722D8A6AB0092151C /* idiots-idiots-everywhere-made-on-imgur-22227665.png */; };
 		CCADAA0222D8A6AB0092151C /* Easycut 12.png in Resources */ = {isa = PBXBuildFile; fileRef = CCADA9E822D8A6AB0092151C /* Easycut 12.png */; };
-		CCADAA1D22D8A8E60092151C /* IMG_2090.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA0622D8A8E40092151C /* IMG_2090.jpg */; };
-		CCADAA1E22D8A8E60092151C /* DSC00535 (1).jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA0722D8A8E40092151C /* DSC00535 (1).jpg */; };
-		CCADAA1F22D8A8E60092151C /* IMG_2455.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA0822D8A8E40092151C /* IMG_2455.jpg */; };
-		CCADAA2022D8A8E60092151C /* IMG_2546.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA0922D8A8E40092151C /* IMG_2546.jpg */; };
-		CCADAA2122D8A8E60092151C /* IMG_0310.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA0A22D8A8E50092151C /* IMG_0310.jpg */; };
-		CCADAA2222D8A8E60092151C /* IMG_3784.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA0B22D8A8E50092151C /* IMG_3784.jpg */; };
 		CCADAA2322D8A8E60092151C /* IMG_4389.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA0C22D8A8E50092151C /* IMG_4389.jpg */; };
 		CCADAA2422D8A8E60092151C /* IMG_4344.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA0D22D8A8E50092151C /* IMG_4344.jpg */; };
-		CCADAA2522D8A8E60092151C /* IMG_3870.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA0E22D8A8E50092151C /* IMG_3870.jpg */; };
 		CCADAA2622D8A8E60092151C /* IMG_4393.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA0F22D8A8E50092151C /* IMG_4393.jpg */; };
-		CCADAA2722D8A8E60092151C /* IMG_1094.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA1022D8A8E50092151C /* IMG_1094.jpg */; };
-		CCADAA2822D8A8E60092151C /* IMG_2170.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA1122D8A8E50092151C /* IMG_2170.jpg */; };
-		CCADAA2922D8A8E60092151C /* IMG_2249.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA1222D8A8E50092151C /* IMG_2249.jpg */; };
-		CCADAA2A22D8A8E60092151C /* IMG_0938.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA1322D8A8E50092151C /* IMG_0938.jpg */; };
-		CCADAA2B22D8A8E60092151C /* IMG_1043.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA1422D8A8E50092151C /* IMG_1043.jpg */; };
-		CCADAA2C22D8A8E60092151C /* IMG_1387.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA1522D8A8E50092151C /* IMG_1387.jpg */; };
-		CCADAA2D22D8A8E60092151C /* IMG_1106.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA1622D8A8E50092151C /* IMG_1106.jpg */; };
-		CCADAA2E22D8A8E60092151C /* IMG_3966.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA1722D8A8E50092151C /* IMG_3966.jpg */; };
 		CCADAA2F22D8A8E60092151C /* IMG_4080.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA1822D8A8E60092151C /* IMG_4080.jpg */; };
-		CCADAA3022D8A8E60092151C /* IMG_0890.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA1922D8A8E60092151C /* IMG_0890.jpg */; };
-		CCADAA3122D8A8E60092151C /* IMG_2505.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA1A22D8A8E60092151C /* IMG_2505.jpg */; };
-		CCADAA3222D8A8E60092151C /* IMG_3787.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA1B22D8A8E60092151C /* IMG_3787.jpg */; };
-		CCADAA3322D8A8E60092151C /* DSC00527 (1).jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA1C22D8A8E60092151C /* DSC00527 (1).jpg */; };
 		CCADAA3722D8AF810092151C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA3622D8AF810092151C /* Assets.xcassets */; };
 		CCDDD543227C9F1900578E33 /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDDD542227C9F1900578E33 /* MessageListViewController.swift */; };
 		CCDDD545227CA24100578E33 /* MessageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDDD544227CA24100578E33 /* MessageListCell.swift */; };
@@ -113,29 +94,10 @@
 		CCADA9E622D8A6AB0092151C /* Bildschirmfoto 2019-05-17 um 13.51.02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bildschirmfoto 2019-05-17 um 13.51.02.png"; sourceTree = "<group>"; };
 		CCADA9E722D8A6AB0092151C /* idiots-idiots-everywhere-made-on-imgur-22227665.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "idiots-idiots-everywhere-made-on-imgur-22227665.png"; sourceTree = "<group>"; };
 		CCADA9E822D8A6AB0092151C /* Easycut 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Easycut 12.png"; sourceTree = "<group>"; };
-		CCADAA0622D8A8E40092151C /* IMG_2090.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2090.jpg; sourceTree = "<group>"; };
-		CCADAA0722D8A8E40092151C /* DSC00535 (1).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DSC00535 (1).jpg"; sourceTree = "<group>"; };
-		CCADAA0822D8A8E40092151C /* IMG_2455.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2455.jpg; sourceTree = "<group>"; };
-		CCADAA0922D8A8E40092151C /* IMG_2546.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2546.jpg; sourceTree = "<group>"; };
-		CCADAA0A22D8A8E50092151C /* IMG_0310.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0310.jpg; sourceTree = "<group>"; };
-		CCADAA0B22D8A8E50092151C /* IMG_3784.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3784.jpg; sourceTree = "<group>"; };
 		CCADAA0C22D8A8E50092151C /* IMG_4389.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4389.jpg; sourceTree = "<group>"; };
 		CCADAA0D22D8A8E50092151C /* IMG_4344.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4344.jpg; sourceTree = "<group>"; };
-		CCADAA0E22D8A8E50092151C /* IMG_3870.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3870.jpg; sourceTree = "<group>"; };
 		CCADAA0F22D8A8E50092151C /* IMG_4393.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4393.jpg; sourceTree = "<group>"; };
-		CCADAA1022D8A8E50092151C /* IMG_1094.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1094.jpg; sourceTree = "<group>"; };
-		CCADAA1122D8A8E50092151C /* IMG_2170.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2170.jpg; sourceTree = "<group>"; };
-		CCADAA1222D8A8E50092151C /* IMG_2249.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2249.jpg; sourceTree = "<group>"; };
-		CCADAA1322D8A8E50092151C /* IMG_0938.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0938.jpg; sourceTree = "<group>"; };
-		CCADAA1422D8A8E50092151C /* IMG_1043.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1043.jpg; sourceTree = "<group>"; };
-		CCADAA1522D8A8E50092151C /* IMG_1387.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1387.jpg; sourceTree = "<group>"; };
-		CCADAA1622D8A8E50092151C /* IMG_1106.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1106.jpg; sourceTree = "<group>"; };
-		CCADAA1722D8A8E50092151C /* IMG_3966.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3966.jpg; sourceTree = "<group>"; };
 		CCADAA1822D8A8E60092151C /* IMG_4080.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4080.jpg; sourceTree = "<group>"; };
-		CCADAA1922D8A8E60092151C /* IMG_0890.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0890.jpg; sourceTree = "<group>"; };
-		CCADAA1A22D8A8E60092151C /* IMG_2505.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2505.jpg; sourceTree = "<group>"; };
-		CCADAA1B22D8A8E60092151C /* IMG_3787.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3787.jpg; sourceTree = "<group>"; };
-		CCADAA1C22D8A8E60092151C /* DSC00527 (1).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DSC00527 (1).jpg"; sourceTree = "<group>"; };
 		CCADAA3622D8AF810092151C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCDDD542227C9F1900578E33 /* MessageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
 		CCDDD544227CA24100578E33 /* MessageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListCell.swift; sourceTree = "<group>"; };
@@ -197,25 +159,6 @@
 		CCADA9D122D8900A0092151C /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
-				CCADAA1C22D8A8E60092151C /* DSC00527 (1).jpg */,
-				CCADAA0722D8A8E40092151C /* DSC00535 (1).jpg */,
-				CCADAA0A22D8A8E50092151C /* IMG_0310.jpg */,
-				CCADAA1922D8A8E60092151C /* IMG_0890.jpg */,
-				CCADAA1322D8A8E50092151C /* IMG_0938.jpg */,
-				CCADAA1422D8A8E50092151C /* IMG_1043.jpg */,
-				CCADAA1022D8A8E50092151C /* IMG_1094.jpg */,
-				CCADAA1622D8A8E50092151C /* IMG_1106.jpg */,
-				CCADAA1522D8A8E50092151C /* IMG_1387.jpg */,
-				CCADAA0622D8A8E40092151C /* IMG_2090.jpg */,
-				CCADAA1122D8A8E50092151C /* IMG_2170.jpg */,
-				CCADAA1222D8A8E50092151C /* IMG_2249.jpg */,
-				CCADAA0822D8A8E40092151C /* IMG_2455.jpg */,
-				CCADAA1A22D8A8E60092151C /* IMG_2505.jpg */,
-				CCADAA0922D8A8E40092151C /* IMG_2546.jpg */,
-				CCADAA0B22D8A8E50092151C /* IMG_3784.jpg */,
-				CCADAA1B22D8A8E60092151C /* IMG_3787.jpg */,
-				CCADAA0E22D8A8E50092151C /* IMG_3870.jpg */,
-				CCADAA1722D8A8E50092151C /* IMG_3966.jpg */,
 				CCADAA1822D8A8E60092151C /* IMG_4080.jpg */,
 				CCADAA0D22D8A8E50092151C /* IMG_4344.jpg */,
 				CCADAA0C22D8A8E50092151C /* IMG_4389.jpg */,
@@ -445,48 +388,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCADAA1D22D8A8E60092151C /* IMG_2090.jpg in Resources */,
-				CCADAA3222D8A8E60092151C /* IMG_3787.jpg in Resources */,
 				CCE1AE7B227AE4DE007DB341 /* LaunchScreen.storyboard in Resources */,
 				CCADA9AB22D396470092151C /* 10000_Words.txt in Resources */,
 				CCADA9F122D8A6AB0092151C /* DSC00535.jpg in Resources */,
-				CCADAA2722D8A8E60092151C /* IMG_1094.jpg in Resources */,
 				CCADAA0022D8A6AB0092151C /* Bildschirmfoto 2019-05-17 um 13.51.02.png in Resources */,
-				CCADAA1E22D8A8E60092151C /* DSC00535 (1).jpg in Resources */,
-				CCADAA2922D8A8E60092151C /* IMG_2249.jpg in Resources */,
 				CCADAA0222D8A6AB0092151C /* Easycut 12.png in Resources */,
 				CCADA9FF22D8A6AB0092151C /* DSC00061.jpg in Resources */,
 				CCADA9FB22D8A6AB0092151C /* DSC00527.jpg in Resources */,
-				CCADAA2C22D8A8E60092151C /* IMG_1387.jpg in Resources */,
-				CCADAA2022D8A8E60092151C /* IMG_2546.jpg in Resources */,
-				CCADAA2122D8A8E60092151C /* IMG_0310.jpg in Resources */,
 				CCE1AE73227AE4DB007DB341 /* Main.storyboard in Resources */,
 				CCADA9EC22D8A6AB0092151C /* IMG_0135.jpg in Resources */,
-				CCADAA2A22D8A8E60092151C /* IMG_0938.jpg in Resources */,
-				CCADAA2822D8A8E60092151C /* IMG_2170.jpg in Resources */,
 				CCADAA2422D8A8E60092151C /* IMG_4344.jpg in Resources */,
-				CCADAA3322D8A8E60092151C /* DSC00527 (1).jpg in Resources */,
-				CCADAA2522D8A8E60092151C /* IMG_3870.jpg in Resources */,
 				CCADA9FE22D8A6AB0092151C /* IMG_1984.jpg in Resources */,
 				CCADAA2322D8A8E60092151C /* IMG_4389.jpg in Resources */,
-				CCADAA2222D8A8E60092151C /* IMG_3784.jpg in Resources */,
-				CCADAA2E22D8A8E60092151C /* IMG_3966.jpg in Resources */,
 				CCADA9FD22D8A6AB0092151C /* IMG_1796.jpg in Resources */,
 				CCADA9FC22D8A6AB0092151C /* IMG_2050.jpg in Resources */,
-				CCADAA1F22D8A8E60092151C /* IMG_2455.jpg in Resources */,
 				CCADAA0122D8A6AB0092151C /* idiots-idiots-everywhere-made-on-imgur-22227665.png in Resources */,
-				CCADAA3022D8A8E60092151C /* IMG_0890.jpg in Resources */,
 				CCADA9F222D8A6AB0092151C /* IMG_0076.png in Resources */,
 				CCADA9F422D8A6AB0092151C /* Photo on 29-08-2017 at 17.44.jpg in Resources */,
 				CCADAA2622D8A8E60092151C /* IMG_4393.jpg in Resources */,
 				CCADA9EF22D8A6AB0092151C /* Bildschirmfoto 2019-06-24 um 16.15.23.png in Resources */,
-				CCADAA2B22D8A8E60092151C /* IMG_1043.jpg in Resources */,
 				CCE1AEA3227B02E3007DB341 /* A Christmas Carol.txt in Resources */,
 				CCADAA2F22D8A8E60092151C /* IMG_4080.jpg in Resources */,
 				CCADAA3722D8AF810092151C /* Assets.xcassets in Resources */,
 				CCADA9F922D8A6AB0092151C /* IMG_0076.jpg in Resources */,
-				CCADAA2D22D8A8E60092151C /* IMG_1106.jpg in Resources */,
-				CCADAA3122D8A8E60092151C /* IMG_2505.jpg in Resources */,
 				CCADA9ED22D8A6AB0092151C /* Bildschirmfoto 2019-04-09 um 20.06.14.png in Resources */,
 				CCADA9F822D8A6AB0092151C /* Foto am 13.02.19 um 09.57.jpg in Resources */,
 			);

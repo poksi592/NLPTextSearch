@@ -30,6 +30,11 @@ class ChristmasCarolMessages {
         self.tokenMessageDictionary = dictionary
         self.tokens = dictionary.map { $0.key }
         self.allChristmasCarolWords = tokenisation.collectTokens(from: christmasCarolText)
+        
+//        let path = Bundle.main.resourcePath
+//        print(path)
+//        let jpegPaths = Bundle.main.paths(forResourcesOfType: "jpeg", inDirectory: nil)
+//        print(jpegPaths)
     }
     
     private class func christmasCarol() -> String {
