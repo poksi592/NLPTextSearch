@@ -18,6 +18,8 @@ class MessageListViewController: UITableViewController, UISearchControllerDelega
     private(set) var messageFetchedResultsController: NSFetchedResultsController<Message>?
     private(set) var messageFetchRequest: NSFetchRequest<Message> = Message.fetchRequest()
     private(set) var searchPhrases = [String]()
+    private var selectedRow: Int = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +60,7 @@ class MessageListViewController: UITableViewController, UISearchControllerDelega
             
             messageDetailViewController.subjectText = messageCell.subjectLabel.text!
             messageDetailViewController.contentText = messageCell.contentLabel.text!
+            messageDetailViewController.selectedMessageID = selectedRow
             messageDetailViewController.searchPhrases = searchPhrases
         }
     }
@@ -135,12 +138,18 @@ extension MessageListViewController {
                                                                  size: 18.0,
                                                                  bold: false,
                                                                  color: UIColor.cyan)
+        if let _ = ChristmasCarolMessages.shared.imagePath(forMessageID: indexPath.row) {
+            cell.attachmentIcon.isHidden = false
+        } else {
+            cell.attachmentIcon.isHidden = true
+        }
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let selectedCell = tableView.cellForRow(at: indexPath) as! MessageListCell
+        selectedRow = indexPath.row
         performSegue(withIdentifier: "messageDetailSegue", sender: selectedCell)
     }
 }

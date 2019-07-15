@@ -13,5 +13,5 @@ class MessageListCell: UITableViewCell {
     
     @IBOutlet weak var subjectLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
-    
+    @IBOutlet weak var attachmentIcon: UIImageView!
 }

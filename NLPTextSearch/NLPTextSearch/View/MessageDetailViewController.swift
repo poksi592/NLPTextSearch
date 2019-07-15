@@ -13,10 +13,12 @@ class MessageDetailViewController: UIViewController {
     
     var subjectText = ""
     var contentText = ""
+    var selectedMessageID = 0
     var searchPhrases = [String]()
     
     @IBOutlet weak var subject: UILabel!
     @IBOutlet weak var content: UITextView!
+    @IBOutlet weak var photo: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,12 +31,22 @@ class MessageDetailViewController: UIViewController {
                                                  size: 20.0,
                                                  bold: true,
                                                  color: UIColor.cyan)
+        updateImage()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         
         self.navigationController?.navigationItem.searchController?.isActive = false
         super.viewWillDisappear(animated)
+    }
+    
+    func updateImage() {
+        
+        if let imagePath = ChristmasCarolMessages.shared.imagePath(forMessageID: selectedMessageID) {
+            
+            let image = UIImage(named: imagePath)
+            photo.image = image
+        }
     }
     
     func tag(string: String,

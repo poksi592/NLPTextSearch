@@ -15,6 +15,8 @@ class ChristmasCarolMessages {
     var tokens = [String]()
     let allChristmasCarolWords: [String]
     let tokenisation = Tokenisation()
+    private var pictureIndexes = [Int : Int]()
+    private var pictureFilenames = [String]()
     
     init() {
         
@@ -69,17 +71,15 @@ extension ChristmasCarolMessages {
         }
         Persistence.shared.saveContext()
         
-        /// MARK: - getting all picture filenames
+        // MARK: getting all picture filenames
         let path = Bundle.main.bundlePath
         let fileManager = FileManager.default
         let filenames = try? fileManager.contentsOfDirectory(atPath: path)
         let jpegFilenames = filenames?.filter { $0.hasSuffix(".jpg") } ?? [String]()
         let pngFilenames = filenames?.filter { $0.hasSuffix(".png") } ?? [String]()
-        let pictureFilenames = jpegFilenames + pngFilenames
+        pictureFilenames = jpegFilenames + pngFilenames
         
-        var pictureIndexes = [Int : Int]()
         for pictureIndex in 0..<pictureFilenames.count {
-            
             pictureIndexes[Int.random(in: 0..<numberOfMessages)] = pictureIndex
         }
         
@@ -155,5 +155,14 @@ extension ChristmasCarolMessages {
             messageNumbers?.insert(Int64(message.messageID))
             tokenMessageDictionary[token] = messageNumbers
         }
+    }
+}
+
+extension ChristmasCarolMessages {
+    
+    func imagePath(forMessageID messageID: Int) -> String? {
+        
+        guard let pixtureIndex = pictureIndexes[messageID] else { return nil }
+        return pictureFilenames[pixtureIndex]
     }
 }
