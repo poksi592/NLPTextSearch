@@ -20,5 +20,6 @@ extension Message {
     @NSManaged public var content: String?
     @NSManaged public var messageID: Int64
     @NSManaged public var subject: String?
+    @NSManaged public var attachmentFilename: String?
 
 }

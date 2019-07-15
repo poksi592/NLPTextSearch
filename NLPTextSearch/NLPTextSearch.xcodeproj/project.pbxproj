@@ -14,27 +14,46 @@
 		CCADA9CD22D789790092151C /* Message+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCADA9C722D789790092151C /* Message+CoreDataProperties.swift */; };
 		CCADA9CE22D789790092151C /* Index+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCADA9C822D789790092151C /* Index+CoreDataClass.swift */; };
 		CCADA9CF22D789790092151C /* Index+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCADA9C922D789790092151C /* Index+CoreDataProperties.swift */; };
-		CCADA9EC22D8A6AB0092151C /* IMG_0135.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADA9D222D8A6AA0092151C /* IMG_0135.jpg */; };
-		CCADA9ED22D8A6AB0092151C /* Bildschirmfoto 2019-04-09 um 20.06.14.png in Resources */ = {isa = PBXBuildFile; fileRef = CCADA9D322D8A6AA0092151C /* Bildschirmfoto 2019-04-09 um 20.06.14.png */; };
-		CCADA9EF22D8A6AB0092151C /* Bildschirmfoto 2019-06-24 um 16.15.23.png in Resources */ = {isa = PBXBuildFile; fileRef = CCADA9D522D8A6AA0092151C /* Bildschirmfoto 2019-06-24 um 16.15.23.png */; };
-		CCADA9F122D8A6AB0092151C /* DSC00535.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADA9D722D8A6AA0092151C /* DSC00535.jpg */; };
-		CCADA9F222D8A6AB0092151C /* IMG_0076.png in Resources */ = {isa = PBXBuildFile; fileRef = CCADA9D822D8A6AA0092151C /* IMG_0076.png */; };
-		CCADA9F422D8A6AB0092151C /* Photo on 29-08-2017 at 17.44.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADA9DA22D8A6AA0092151C /* Photo on 29-08-2017 at 17.44.jpg */; };
-		CCADA9F822D8A6AB0092151C /* Foto am 13.02.19 um 09.57.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADA9DE22D8A6AA0092151C /* Foto am 13.02.19 um 09.57.jpg */; };
-		CCADA9F922D8A6AB0092151C /* IMG_0076.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADA9DF22D8A6AA0092151C /* IMG_0076.jpg */; };
-		CCADA9FB22D8A6AB0092151C /* DSC00527.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADA9E122D8A6AB0092151C /* DSC00527.jpg */; };
-		CCADA9FC22D8A6AB0092151C /* IMG_2050.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADA9E222D8A6AB0092151C /* IMG_2050.jpg */; };
-		CCADA9FD22D8A6AB0092151C /* IMG_1796.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADA9E322D8A6AB0092151C /* IMG_1796.jpg */; };
-		CCADA9FE22D8A6AB0092151C /* IMG_1984.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADA9E422D8A6AB0092151C /* IMG_1984.jpg */; };
-		CCADA9FF22D8A6AB0092151C /* DSC00061.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADA9E522D8A6AB0092151C /* DSC00061.jpg */; };
-		CCADAA0022D8A6AB0092151C /* Bildschirmfoto 2019-05-17 um 13.51.02.png in Resources */ = {isa = PBXBuildFile; fileRef = CCADA9E622D8A6AB0092151C /* Bildschirmfoto 2019-05-17 um 13.51.02.png */; };
-		CCADAA0122D8A6AB0092151C /* idiots-idiots-everywhere-made-on-imgur-22227665.png in Resources */ = {isa = PBXBuildFile; fileRef = CCADA9E722D8A6AB0092151C /* idiots-idiots-everywhere-made-on-imgur-22227665.png */; };
-		CCADAA0222D8A6AB0092151C /* Easycut 12.png in Resources */ = {isa = PBXBuildFile; fileRef = CCADA9E822D8A6AB0092151C /* Easycut 12.png */; };
-		CCADAA2322D8A8E60092151C /* IMG_4389.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA0C22D8A8E50092151C /* IMG_4389.jpg */; };
-		CCADAA2422D8A8E60092151C /* IMG_4344.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA0D22D8A8E50092151C /* IMG_4344.jpg */; };
-		CCADAA2622D8A8E60092151C /* IMG_4393.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA0F22D8A8E50092151C /* IMG_4393.jpg */; };
-		CCADAA2F22D8A8E60092151C /* IMG_4080.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA1822D8A8E60092151C /* IMG_4080.jpg */; };
 		CCADAA3722D8AF810092151C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA3622D8AF810092151C /* Assets.xcassets */; };
+		CCADAA5F22DC83780092151C /* IMG_1094.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA3822DC83730092151C /* IMG_1094.jpg */; };
+		CCADAA6022DC83780092151C /* IMG_1043.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA3922DC83730092151C /* IMG_1043.jpg */; };
+		CCADAA6122DC83780092151C /* IMG_2546.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA3A22DC83730092151C /* IMG_2546.jpg */; };
+		CCADAA6222DC83780092151C /* IMG_0938.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA3B22DC83730092151C /* IMG_0938.jpg */; };
+		CCADAA6322DC83780092151C /* IMG_3784.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA3C22DC83740092151C /* IMG_3784.jpg */; };
+		CCADAA6422DC83780092151C /* idiots-idiots-everywhere-made-on-imgur-22227665.png in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA3D22DC83740092151C /* idiots-idiots-everywhere-made-on-imgur-22227665.png */; };
+		CCADAA6522DC83780092151C /* DSC00535.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA3E22DC83740092151C /* DSC00535.jpg */; };
+		CCADAA6622DC83780092151C /* Bildschirmfoto 2019-05-17 um 13.51.02.png in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA3F22DC83740092151C /* Bildschirmfoto 2019-05-17 um 13.51.02.png */; };
+		CCADAA6722DC83780092151C /* IMG_2505.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA4022DC83740092151C /* IMG_2505.jpg */; };
+		CCADAA6822DC83780092151C /* IMG_3966.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA4122DC83740092151C /* IMG_3966.jpg */; };
+		CCADAA6922DC83780092151C /* Foto am 13.02.19 um 09.57.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA4222DC83740092151C /* Foto am 13.02.19 um 09.57.jpg */; };
+		CCADAA6A22DC83780092151C /* IMG_0890.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA4322DC83740092151C /* IMG_0890.jpg */; };
+		CCADAA6B22DC83780092151C /* IMG_1796.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA4422DC83740092151C /* IMG_1796.jpg */; };
+		CCADAA6C22DC83780092151C /* IMG_1106.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA4522DC83750092151C /* IMG_1106.jpg */; };
+		CCADAA6D22DC83780092151C /* IMG_4389.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA4622DC83750092151C /* IMG_4389.jpg */; };
+		CCADAA6E22DC83780092151C /* IMG_4080.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA4722DC83750092151C /* IMG_4080.jpg */; };
+		CCADAA6F22DC83780092151C /* Photo on 29-08-2017 at 17.44.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA4822DC83750092151C /* Photo on 29-08-2017 at 17.44.jpg */; };
+		CCADAA7022DC83780092151C /* Bildschirmfoto 2019-04-09 um 20.06.14.png in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA4922DC83750092151C /* Bildschirmfoto 2019-04-09 um 20.06.14.png */; };
+		CCADAA7122DC83780092151C /* DSC00527.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA4A22DC83750092151C /* DSC00527.jpg */; };
+		CCADAA7222DC83780092151C /* DSC00061.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA4B22DC83750092151C /* DSC00061.jpg */; };
+		CCADAA7322DC83780092151C /* IMG_3787.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA4C22DC83750092151C /* IMG_3787.jpg */; };
+		CCADAA7422DC83780092151C /* IMG_1387.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA4D22DC83750092151C /* IMG_1387.jpg */; };
+		CCADAA7522DC83780092151C /* IMG_2170.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA4E22DC83760092151C /* IMG_2170.jpg */; };
+		CCADAA7622DC83780092151C /* Bildschirmfoto 2019-06-24 um 16.15.23.png in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA4F22DC83760092151C /* Bildschirmfoto 2019-06-24 um 16.15.23.png */; };
+		CCADAA7722DC83780092151C /* Easycut 12.png in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA5022DC83760092151C /* Easycut 12.png */; };
+		CCADAA7822DC83780092151C /* DSC00535 (1).jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA5122DC83760092151C /* DSC00535 (1).jpg */; };
+		CCADAA7922DC83780092151C /* IMG_2249.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA5222DC83760092151C /* IMG_2249.jpg */; };
+		CCADAA7A22DC83780092151C /* IMG_2090.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA5322DC83760092151C /* IMG_2090.jpg */; };
+		CCADAA7B22DC83780092151C /* IMG_2050.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA5422DC83760092151C /* IMG_2050.jpg */; };
+		CCADAA7C22DC83780092151C /* IMG_3870.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA5522DC83770092151C /* IMG_3870.jpg */; };
+		CCADAA7D22DC83780092151C /* IMG_4344.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA5622DC83770092151C /* IMG_4344.jpg */; };
+		CCADAA7E22DC83780092151C /* IMG_1984.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA5722DC83770092151C /* IMG_1984.jpg */; };
+		CCADAA7F22DC83780092151C /* IMG_0310.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA5822DC83770092151C /* IMG_0310.jpg */; };
+		CCADAA8022DC83780092151C /* IMG_4393.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA5922DC83770092151C /* IMG_4393.jpg */; };
+		CCADAA8122DC83780092151C /* IMG_2455.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA5A22DC83770092151C /* IMG_2455.jpg */; };
+		CCADAA8222DC83780092151C /* IMG_0135.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA5B22DC83770092151C /* IMG_0135.jpg */; };
+		CCADAA8322DC83780092151C /* IMG_0076.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA5C22DC83780092151C /* IMG_0076.jpg */; };
+		CCADAA8422DC83780092151C /* DSC00527 (1).jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA5D22DC83780092151C /* DSC00527 (1).jpg */; };
+		CCADAA8522DC83780092151C /* IMG_0076.png in Resources */ = {isa = PBXBuildFile; fileRef = CCADAA5E22DC83780092151C /* IMG_0076.png */; };
 		CCDDD543227C9F1900578E33 /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDDD542227C9F1900578E33 /* MessageListViewController.swift */; };
 		CCDDD545227CA24100578E33 /* MessageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDDD544227CA24100578E33 /* MessageListCell.swift */; };
 		CCDDD549227F614C00578E33 /* MessageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDDD548227F614C00578E33 /* MessageDetailViewController.swift */; };
@@ -78,27 +97,46 @@
 		CCADA9C722D789790092151C /* Message+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Message+CoreDataProperties.swift"; path = "NLPTextSearch/Model/Core Data/Message+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CCADA9C822D789790092151C /* Index+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Index+CoreDataClass.swift"; path = "NLPTextSearch/Model/Core Data/Index+CoreDataClass.swift"; sourceTree = "<group>"; };
 		CCADA9C922D789790092151C /* Index+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Index+CoreDataProperties.swift"; path = "NLPTextSearch/Model/Core Data/Index+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		CCADA9D222D8A6AA0092151C /* IMG_0135.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0135.jpg; sourceTree = "<group>"; };
-		CCADA9D322D8A6AA0092151C /* Bildschirmfoto 2019-04-09 um 20.06.14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bildschirmfoto 2019-04-09 um 20.06.14.png"; sourceTree = "<group>"; };
-		CCADA9D522D8A6AA0092151C /* Bildschirmfoto 2019-06-24 um 16.15.23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bildschirmfoto 2019-06-24 um 16.15.23.png"; sourceTree = "<group>"; };
-		CCADA9D722D8A6AA0092151C /* DSC00535.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DSC00535.jpg; sourceTree = "<group>"; };
-		CCADA9D822D8A6AA0092151C /* IMG_0076.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0076.png; sourceTree = "<group>"; };
-		CCADA9DA22D8A6AA0092151C /* Photo on 29-08-2017 at 17.44.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Photo on 29-08-2017 at 17.44.jpg"; sourceTree = "<group>"; };
-		CCADA9DE22D8A6AA0092151C /* Foto am 13.02.19 um 09.57.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Foto am 13.02.19 um 09.57.jpg"; sourceTree = "<group>"; };
-		CCADA9DF22D8A6AA0092151C /* IMG_0076.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0076.jpg; sourceTree = "<group>"; };
-		CCADA9E122D8A6AB0092151C /* DSC00527.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DSC00527.jpg; sourceTree = "<group>"; };
-		CCADA9E222D8A6AB0092151C /* IMG_2050.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2050.jpg; sourceTree = "<group>"; };
-		CCADA9E322D8A6AB0092151C /* IMG_1796.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1796.jpg; sourceTree = "<group>"; };
-		CCADA9E422D8A6AB0092151C /* IMG_1984.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1984.jpg; sourceTree = "<group>"; };
-		CCADA9E522D8A6AB0092151C /* DSC00061.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DSC00061.jpg; sourceTree = "<group>"; };
-		CCADA9E622D8A6AB0092151C /* Bildschirmfoto 2019-05-17 um 13.51.02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bildschirmfoto 2019-05-17 um 13.51.02.png"; sourceTree = "<group>"; };
-		CCADA9E722D8A6AB0092151C /* idiots-idiots-everywhere-made-on-imgur-22227665.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "idiots-idiots-everywhere-made-on-imgur-22227665.png"; sourceTree = "<group>"; };
-		CCADA9E822D8A6AB0092151C /* Easycut 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Easycut 12.png"; sourceTree = "<group>"; };
-		CCADAA0C22D8A8E50092151C /* IMG_4389.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4389.jpg; sourceTree = "<group>"; };
-		CCADAA0D22D8A8E50092151C /* IMG_4344.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4344.jpg; sourceTree = "<group>"; };
-		CCADAA0F22D8A8E50092151C /* IMG_4393.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4393.jpg; sourceTree = "<group>"; };
-		CCADAA1822D8A8E60092151C /* IMG_4080.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4080.jpg; sourceTree = "<group>"; };
 		CCADAA3622D8AF810092151C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCADAA3822DC83730092151C /* IMG_1094.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1094.jpg; sourceTree = "<group>"; };
+		CCADAA3922DC83730092151C /* IMG_1043.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1043.jpg; sourceTree = "<group>"; };
+		CCADAA3A22DC83730092151C /* IMG_2546.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2546.jpg; sourceTree = "<group>"; };
+		CCADAA3B22DC83730092151C /* IMG_0938.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0938.jpg; sourceTree = "<group>"; };
+		CCADAA3C22DC83740092151C /* IMG_3784.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3784.jpg; sourceTree = "<group>"; };
+		CCADAA3D22DC83740092151C /* idiots-idiots-everywhere-made-on-imgur-22227665.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "idiots-idiots-everywhere-made-on-imgur-22227665.png"; sourceTree = "<group>"; };
+		CCADAA3E22DC83740092151C /* DSC00535.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DSC00535.jpg; sourceTree = "<group>"; };
+		CCADAA3F22DC83740092151C /* Bildschirmfoto 2019-05-17 um 13.51.02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bildschirmfoto 2019-05-17 um 13.51.02.png"; sourceTree = "<group>"; };
+		CCADAA4022DC83740092151C /* IMG_2505.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2505.jpg; sourceTree = "<group>"; };
+		CCADAA4122DC83740092151C /* IMG_3966.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3966.jpg; sourceTree = "<group>"; };
+		CCADAA4222DC83740092151C /* Foto am 13.02.19 um 09.57.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Foto am 13.02.19 um 09.57.jpg"; sourceTree = "<group>"; };
+		CCADAA4322DC83740092151C /* IMG_0890.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0890.jpg; sourceTree = "<group>"; };
+		CCADAA4422DC83740092151C /* IMG_1796.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1796.jpg; sourceTree = "<group>"; };
+		CCADAA4522DC83750092151C /* IMG_1106.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1106.jpg; sourceTree = "<group>"; };
+		CCADAA4622DC83750092151C /* IMG_4389.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4389.jpg; sourceTree = "<group>"; };
+		CCADAA4722DC83750092151C /* IMG_4080.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4080.jpg; sourceTree = "<group>"; };
+		CCADAA4822DC83750092151C /* Photo on 29-08-2017 at 17.44.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Photo on 29-08-2017 at 17.44.jpg"; sourceTree = "<group>"; };
+		CCADAA4922DC83750092151C /* Bildschirmfoto 2019-04-09 um 20.06.14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bildschirmfoto 2019-04-09 um 20.06.14.png"; sourceTree = "<group>"; };
+		CCADAA4A22DC83750092151C /* DSC00527.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DSC00527.jpg; sourceTree = "<group>"; };
+		CCADAA4B22DC83750092151C /* DSC00061.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DSC00061.jpg; sourceTree = "<group>"; };
+		CCADAA4C22DC83750092151C /* IMG_3787.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3787.jpg; sourceTree = "<group>"; };
+		CCADAA4D22DC83750092151C /* IMG_1387.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1387.jpg; sourceTree = "<group>"; };
+		CCADAA4E22DC83760092151C /* IMG_2170.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2170.jpg; sourceTree = "<group>"; };
+		CCADAA4F22DC83760092151C /* Bildschirmfoto 2019-06-24 um 16.15.23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bildschirmfoto 2019-06-24 um 16.15.23.png"; sourceTree = "<group>"; };
+		CCADAA5022DC83760092151C /* Easycut 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Easycut 12.png"; sourceTree = "<group>"; };
+		CCADAA5122DC83760092151C /* DSC00535 (1).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DSC00535 (1).jpg"; sourceTree = "<group>"; };
+		CCADAA5222DC83760092151C /* IMG_2249.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2249.jpg; sourceTree = "<group>"; };
+		CCADAA5322DC83760092151C /* IMG_2090.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2090.jpg; sourceTree = "<group>"; };
+		CCADAA5422DC83760092151C /* IMG_2050.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2050.jpg; sourceTree = "<group>"; };
+		CCADAA5522DC83770092151C /* IMG_3870.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_3870.jpg; sourceTree = "<group>"; };
+		CCADAA5622DC83770092151C /* IMG_4344.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4344.jpg; sourceTree = "<group>"; };
+		CCADAA5722DC83770092151C /* IMG_1984.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1984.jpg; sourceTree = "<group>"; };
+		CCADAA5822DC83770092151C /* IMG_0310.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0310.jpg; sourceTree = "<group>"; };
+		CCADAA5922DC83770092151C /* IMG_4393.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_4393.jpg; sourceTree = "<group>"; };
+		CCADAA5A22DC83770092151C /* IMG_2455.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2455.jpg; sourceTree = "<group>"; };
+		CCADAA5B22DC83770092151C /* IMG_0135.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0135.jpg; sourceTree = "<group>"; };
+		CCADAA5C22DC83780092151C /* IMG_0076.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0076.jpg; sourceTree = "<group>"; };
+		CCADAA5D22DC83780092151C /* DSC00527 (1).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DSC00527 (1).jpg"; sourceTree = "<group>"; };
+		CCADAA5E22DC83780092151C /* IMG_0076.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0076.png; sourceTree = "<group>"; };
 		CCDDD542227C9F1900578E33 /* MessageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
 		CCDDD544227CA24100578E33 /* MessageListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListCell.swift; sourceTree = "<group>"; };
 		CCDDD548227F614C00578E33 /* MessageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailViewController.swift; sourceTree = "<group>"; };
@@ -159,26 +197,45 @@
 		CCADA9D122D8900A0092151C /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
-				CCADAA1822D8A8E60092151C /* IMG_4080.jpg */,
-				CCADAA0D22D8A8E50092151C /* IMG_4344.jpg */,
-				CCADAA0C22D8A8E50092151C /* IMG_4389.jpg */,
-				CCADAA0F22D8A8E50092151C /* IMG_4393.jpg */,
-				CCADA9D322D8A6AA0092151C /* Bildschirmfoto 2019-04-09 um 20.06.14.png */,
-				CCADA9E622D8A6AB0092151C /* Bildschirmfoto 2019-05-17 um 13.51.02.png */,
-				CCADA9D522D8A6AA0092151C /* Bildschirmfoto 2019-06-24 um 16.15.23.png */,
-				CCADA9E522D8A6AB0092151C /* DSC00061.jpg */,
-				CCADA9E122D8A6AB0092151C /* DSC00527.jpg */,
-				CCADA9D722D8A6AA0092151C /* DSC00535.jpg */,
-				CCADA9E822D8A6AB0092151C /* Easycut 12.png */,
-				CCADA9DE22D8A6AA0092151C /* Foto am 13.02.19 um 09.57.jpg */,
-				CCADA9E722D8A6AB0092151C /* idiots-idiots-everywhere-made-on-imgur-22227665.png */,
-				CCADA9DF22D8A6AA0092151C /* IMG_0076.jpg */,
-				CCADA9D822D8A6AA0092151C /* IMG_0076.png */,
-				CCADA9D222D8A6AA0092151C /* IMG_0135.jpg */,
-				CCADA9E322D8A6AB0092151C /* IMG_1796.jpg */,
-				CCADA9E422D8A6AB0092151C /* IMG_1984.jpg */,
-				CCADA9E222D8A6AB0092151C /* IMG_2050.jpg */,
-				CCADA9DA22D8A6AA0092151C /* Photo on 29-08-2017 at 17.44.jpg */,
+				CCADAA4922DC83750092151C /* Bildschirmfoto 2019-04-09 um 20.06.14.png */,
+				CCADAA3F22DC83740092151C /* Bildschirmfoto 2019-05-17 um 13.51.02.png */,
+				CCADAA4F22DC83760092151C /* Bildschirmfoto 2019-06-24 um 16.15.23.png */,
+				CCADAA4B22DC83750092151C /* DSC00061.jpg */,
+				CCADAA5D22DC83780092151C /* DSC00527 (1).jpg */,
+				CCADAA4A22DC83750092151C /* DSC00527.jpg */,
+				CCADAA5122DC83760092151C /* DSC00535 (1).jpg */,
+				CCADAA3E22DC83740092151C /* DSC00535.jpg */,
+				CCADAA5022DC83760092151C /* Easycut 12.png */,
+				CCADAA4222DC83740092151C /* Foto am 13.02.19 um 09.57.jpg */,
+				CCADAA3D22DC83740092151C /* idiots-idiots-everywhere-made-on-imgur-22227665.png */,
+				CCADAA5C22DC83780092151C /* IMG_0076.jpg */,
+				CCADAA5E22DC83780092151C /* IMG_0076.png */,
+				CCADAA5B22DC83770092151C /* IMG_0135.jpg */,
+				CCADAA5822DC83770092151C /* IMG_0310.jpg */,
+				CCADAA4322DC83740092151C /* IMG_0890.jpg */,
+				CCADAA3B22DC83730092151C /* IMG_0938.jpg */,
+				CCADAA3922DC83730092151C /* IMG_1043.jpg */,
+				CCADAA3822DC83730092151C /* IMG_1094.jpg */,
+				CCADAA4522DC83750092151C /* IMG_1106.jpg */,
+				CCADAA4D22DC83750092151C /* IMG_1387.jpg */,
+				CCADAA4422DC83740092151C /* IMG_1796.jpg */,
+				CCADAA5722DC83770092151C /* IMG_1984.jpg */,
+				CCADAA5422DC83760092151C /* IMG_2050.jpg */,
+				CCADAA5322DC83760092151C /* IMG_2090.jpg */,
+				CCADAA4E22DC83760092151C /* IMG_2170.jpg */,
+				CCADAA5222DC83760092151C /* IMG_2249.jpg */,
+				CCADAA5A22DC83770092151C /* IMG_2455.jpg */,
+				CCADAA4022DC83740092151C /* IMG_2505.jpg */,
+				CCADAA3A22DC83730092151C /* IMG_2546.jpg */,
+				CCADAA3C22DC83740092151C /* IMG_3784.jpg */,
+				CCADAA4C22DC83750092151C /* IMG_3787.jpg */,
+				CCADAA5522DC83770092151C /* IMG_3870.jpg */,
+				CCADAA4122DC83740092151C /* IMG_3966.jpg */,
+				CCADAA4722DC83750092151C /* IMG_4080.jpg */,
+				CCADAA5622DC83770092151C /* IMG_4344.jpg */,
+				CCADAA4622DC83750092151C /* IMG_4389.jpg */,
+				CCADAA5922DC83770092151C /* IMG_4393.jpg */,
+				CCADAA4822DC83750092151C /* Photo on 29-08-2017 at 17.44.jpg */,
 			);
 			path = Pictures;
 			sourceTree = "<group>";
@@ -388,31 +445,50 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCADAA7A22DC83780092151C /* IMG_2090.jpg in Resources */,
+				CCADAA6822DC83780092151C /* IMG_3966.jpg in Resources */,
+				CCADAA6122DC83780092151C /* IMG_2546.jpg in Resources */,
+				CCADAA6422DC83780092151C /* idiots-idiots-everywhere-made-on-imgur-22227665.png in Resources */,
+				CCADAA8322DC83780092151C /* IMG_0076.jpg in Resources */,
+				CCADAA7122DC83780092151C /* DSC00527.jpg in Resources */,
+				CCADAA6922DC83780092151C /* Foto am 13.02.19 um 09.57.jpg in Resources */,
+				CCADAA7D22DC83780092151C /* IMG_4344.jpg in Resources */,
+				CCADAA6B22DC83780092151C /* IMG_1796.jpg in Resources */,
 				CCE1AE7B227AE4DE007DB341 /* LaunchScreen.storyboard in Resources */,
+				CCADAA8222DC83780092151C /* IMG_0135.jpg in Resources */,
+				CCADAA8422DC83780092151C /* DSC00527 (1).jpg in Resources */,
+				CCADAA8022DC83780092151C /* IMG_4393.jpg in Resources */,
+				CCADAA7E22DC83780092151C /* IMG_1984.jpg in Resources */,
+				CCADAA7B22DC83780092151C /* IMG_2050.jpg in Resources */,
+				CCADAA5F22DC83780092151C /* IMG_1094.jpg in Resources */,
+				CCADAA7922DC83780092151C /* IMG_2249.jpg in Resources */,
 				CCADA9AB22D396470092151C /* 10000_Words.txt in Resources */,
-				CCADA9F122D8A6AB0092151C /* DSC00535.jpg in Resources */,
-				CCADAA0022D8A6AB0092151C /* Bildschirmfoto 2019-05-17 um 13.51.02.png in Resources */,
-				CCADAA0222D8A6AB0092151C /* Easycut 12.png in Resources */,
-				CCADA9FF22D8A6AB0092151C /* DSC00061.jpg in Resources */,
-				CCADA9FB22D8A6AB0092151C /* DSC00527.jpg in Resources */,
+				CCADAA8122DC83780092151C /* IMG_2455.jpg in Resources */,
+				CCADAA7222DC83780092151C /* DSC00061.jpg in Resources */,
+				CCADAA6F22DC83780092151C /* Photo on 29-08-2017 at 17.44.jpg in Resources */,
+				CCADAA6222DC83780092151C /* IMG_0938.jpg in Resources */,
+				CCADAA7C22DC83780092151C /* IMG_3870.jpg in Resources */,
+				CCADAA6622DC83780092151C /* Bildschirmfoto 2019-05-17 um 13.51.02.png in Resources */,
+				CCADAA7422DC83780092151C /* IMG_1387.jpg in Resources */,
+				CCADAA6A22DC83780092151C /* IMG_0890.jpg in Resources */,
+				CCADAA7322DC83780092151C /* IMG_3787.jpg in Resources */,
+				CCADAA7622DC83780092151C /* Bildschirmfoto 2019-06-24 um 16.15.23.png in Resources */,
+				CCADAA8522DC83780092151C /* IMG_0076.png in Resources */,
+				CCADAA6522DC83780092151C /* DSC00535.jpg in Resources */,
+				CCADAA7822DC83780092151C /* DSC00535 (1).jpg in Resources */,
+				CCADAA6322DC83780092151C /* IMG_3784.jpg in Resources */,
+				CCADAA6022DC83780092151C /* IMG_1043.jpg in Resources */,
 				CCE1AE73227AE4DB007DB341 /* Main.storyboard in Resources */,
-				CCADA9EC22D8A6AB0092151C /* IMG_0135.jpg in Resources */,
-				CCADAA2422D8A8E60092151C /* IMG_4344.jpg in Resources */,
-				CCADA9FE22D8A6AB0092151C /* IMG_1984.jpg in Resources */,
-				CCADAA2322D8A8E60092151C /* IMG_4389.jpg in Resources */,
-				CCADA9FD22D8A6AB0092151C /* IMG_1796.jpg in Resources */,
-				CCADA9FC22D8A6AB0092151C /* IMG_2050.jpg in Resources */,
-				CCADAA0122D8A6AB0092151C /* idiots-idiots-everywhere-made-on-imgur-22227665.png in Resources */,
-				CCADA9F222D8A6AB0092151C /* IMG_0076.png in Resources */,
-				CCADA9F422D8A6AB0092151C /* Photo on 29-08-2017 at 17.44.jpg in Resources */,
-				CCADAA2622D8A8E60092151C /* IMG_4393.jpg in Resources */,
-				CCADA9EF22D8A6AB0092151C /* Bildschirmfoto 2019-06-24 um 16.15.23.png in Resources */,
+				CCADAA6E22DC83780092151C /* IMG_4080.jpg in Resources */,
+				CCADAA6D22DC83780092151C /* IMG_4389.jpg in Resources */,
+				CCADAA6722DC83780092151C /* IMG_2505.jpg in Resources */,
+				CCADAA6C22DC83780092151C /* IMG_1106.jpg in Resources */,
 				CCE1AEA3227B02E3007DB341 /* A Christmas Carol.txt in Resources */,
-				CCADAA2F22D8A8E60092151C /* IMG_4080.jpg in Resources */,
+				CCADAA7722DC83780092151C /* Easycut 12.png in Resources */,
+				CCADAA7522DC83780092151C /* IMG_2170.jpg in Resources */,
+				CCADAA7F22DC83780092151C /* IMG_0310.jpg in Resources */,
+				CCADAA7022DC83780092151C /* Bildschirmfoto 2019-04-09 um 20.06.14.png in Resources */,
 				CCADAA3722D8AF810092151C /* Assets.xcassets in Resources */,
-				CCADA9F922D8A6AB0092151C /* IMG_0076.jpg in Resources */,
-				CCADA9ED22D8A6AB0092151C /* Bildschirmfoto 2019-04-09 um 20.06.14.png in Resources */,
-				CCADA9F822D8A6AB0092151C /* Foto am 13.02.19 um 09.57.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

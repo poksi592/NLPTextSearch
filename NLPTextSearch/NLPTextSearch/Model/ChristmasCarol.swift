@@ -30,11 +30,6 @@ class ChristmasCarolMessages {
         self.tokenMessageDictionary = dictionary
         self.tokens = dictionary.map { $0.key }
         self.allChristmasCarolWords = tokenisation.collectTokens(from: christmasCarolText)
-        
-//        let path = Bundle.main.resourcePath
-//        print(path)
-//        let jpegPaths = Bundle.main.paths(forResourcesOfType: "jpeg", inDirectory: nil)
-//        print(jpegPaths)
     }
     
     private class func christmasCarol() -> String {
@@ -74,6 +69,20 @@ extension ChristmasCarolMessages {
         }
         Persistence.shared.saveContext()
         
+        /// MARK: - getting all picture filenames
+        let path = Bundle.main.bundlePath
+        let fileManager = FileManager.default
+        let filenames = try? fileManager.contentsOfDirectory(atPath: path)
+        let jpegFilenames = filenames?.filter { $0.hasSuffix(".jpg") } ?? [String]()
+        let pngFilenames = filenames?.filter { $0.hasSuffix(".png") } ?? [String]()
+        let pictureFilenames = jpegFilenames + pngFilenames
+        
+        var pictureIndexes = [Int : Int]()
+        for pictureIndex in 0..<pictureFilenames.count {
+            
+            pictureIndexes[Int.random(in: 0..<numberOfMessages)] = pictureIndex
+        }
+        
         for messageNumber in 1...numberOfMessages {
             
             var message = ""
@@ -96,10 +105,13 @@ extension ChristmasCarolMessages {
             messageObject.messageID = Int64(messageNumber)
             messageObject.subject = "#" + String(messageNumber) + " " + subject
             messageObject.content = message
+            if let filenameIndex = pictureIndexes[messageNumber] {
+                messageObject.attachmentFilename = pictureFilenames[filenameIndex]
+            }
             
             tokenizeMessage(messageObject)
         }
-        
+       
         tokenMessageDictionary.forEach { (key, value) in
             
             let indexObject = Index(context: managedObjectContext)
