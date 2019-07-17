@@ -1,38 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18F203" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14865.6" systemVersion="18F203" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Index" representedClassName="Index" syncable="YES">
-        <attribute name="token" optional="YES" attributeType="String">
-            <userInfo/>
-        </attribute>
-        <relationship name="indexedMessages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="IndexedMessages" inverseName="index" inverseEntity="IndexedMessages">
-            <userInfo/>
-        </relationship>
+        <attribute name="token" optional="YES" attributeType="String"/>
+        <relationship name="indexedMessages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="IndexedMessages" inverseName="index" inverseEntity="IndexedMessages"/>
     </entity>
     <entity name="IndexedMessages" representedClassName="IndexedMessages" syncable="YES">
-        <attribute name="messageID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES">
-            <userInfo/>
-        </attribute>
-        <relationship name="index" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Index" inverseName="indexedMessages" inverseEntity="Index">
-            <userInfo/>
-        </relationship>
+        <attribute name="messageID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="index" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Index" inverseName="indexedMessages" inverseEntity="Index"/>
     </entity>
     <entity name="Message" representedClassName="Message" syncable="YES">
-        <attribute name="attachmentFilename" optional="YES" attributeType="String">
-            <userInfo/>
-        </attribute>
-        <attribute name="content" optional="YES" attributeType="String">
-            <userInfo/>
-        </attribute>
-        <attribute name="messageID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES">
-            <userInfo/>
-        </attribute>
-        <attribute name="subject" optional="YES" attributeType="String">
-            <userInfo/>
-        </attribute>
+        <attribute name="attachmentFilename" optional="YES" attributeType="String"/>
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="messageID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="ocrText" optional="YES" attributeType="String"/>
+        <attribute name="subject" optional="YES" attributeType="String"/>
     </entity>
     <elements>
         <element name="Index" positionX="-63" positionY="9" width="128" height="73"/>
         <element name="IndexedMessages" positionX="-54" positionY="18" width="128" height="73"/>
-        <element name="Message" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Message" positionX="-63" positionY="-18" width="128" height="118"/>
     </elements>
 </model>

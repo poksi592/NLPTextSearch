@@ -33,7 +33,7 @@ class MessageListViewController: UITableViewController, UISearchControllerDelega
     func setupFetchResultsController() {
         
         let managedObjectContext = Persistence.shared.persistentContainer.viewContext
-        messageFetchRequest.fetchLimit = 100
+        messageFetchRequest.fetchLimit = 1000
         messageFetchRequest.sortDescriptors = [NSSortDescriptor(key: "messageID", ascending: true)]
         
         messageFetchedResultsController = NSFetchedResultsController(fetchRequest: messageFetchRequest,

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreData
 
 class ChristmasCarolMessages {
     
@@ -15,6 +16,7 @@ class ChristmasCarolMessages {
     var tokens = [String]()
     let allChristmasCarolWords: [String]
     let tokenisation = Tokenisation()
+    let imageVision = ImageVision()
     private var pictureIndexes = [Int : Int]()
     private var pictureFilenames = [String]()
     
@@ -83,7 +85,7 @@ extension ChristmasCarolMessages {
             pictureIndexes[Int.random(in: 0..<numberOfMessages)] = pictureIndex
         }
         
-        for messageNumber in 1...numberOfMessages {
+        for messageNumber in 0..<numberOfMessages {
             
             var message = ""
             for _ in 1...numberOfWordsInMessage {
@@ -106,7 +108,18 @@ extension ChristmasCarolMessages {
             messageObject.subject = "#" + String(messageNumber) + " " + subject
             messageObject.content = message
             if let filenameIndex = pictureIndexes[messageNumber] {
-                messageObject.attachmentFilename = pictureFilenames[filenameIndex]
+                
+                let filename = pictureFilenames[filenameIndex]
+                messageObject.attachmentFilename = filename
+                
+                var recognizedText: String = ""
+                imageVision.textFromBundleImage(named: filename) { (text) in
+                    if let text = text {
+                        recognizedText = recognizedText + " " + text
+                    }
+                }
+                messageObject.ocrText = recognizedText
+                print("Picture: \(filename)  OCR: \(recognizedText)")
             }
             
             tokenizeMessage(messageObject)
@@ -126,6 +139,42 @@ extension ChristmasCarolMessages {
         }
         
         Persistence.shared.saveContext()
+        
+//        // MARK: Picture OCR
+//
+//        let swappedPictureIndexes = pictureIndexes.reduce([Int:Int]()) { (result, arg1) -> [Int:Int] in
+//
+//            let (key,value) = arg1
+//            var varResult = result
+//            varResult[value] = key
+//            return varResult
+//        }
+//
+//        var textsFromImages = [[String]]()
+//        for (index,filename) in pictureFilenames.enumerated() {
+//
+//            var recognizedText: String = ""
+//            imageVision.textFromBundleImage(named: filename) { (text) in
+//                if let text = text {
+//                    recognizedText = recognizedText + " " + text
+//                }
+//                print("OCR Text \(index): \(String(describing: text))")
+//            }
+//
+//            let tokenizedText = tokenisation.collectLinguisticTokens(from: recognizedText)
+//            let messageFetchRequest: NSFetchRequest<Index> = Index.fetchRequest()
+//            if let messageId = swappedPictureIndexes[index] {
+//                messageFetchRequest.predicate = NSPredicate(format: "SELF.messageID == %d", messageId)
+//                let indexes = try! managedObjectContext.fetch(messageFetchRequest)
+//            }
+//            messageFetchRequest.predicate = NSPredicate(format: "SELF.messageID == %d", messageId)
+//            let indexes = try! managedObjectContext.fetch(messageFetchRequest)
+//            textsFromImages.append(tokenizedText)
+//        }
+//
+//        print(textsFromImages)
+        
+        
         
         let encoder = JSONEncoder()
         let jsonData = try! encoder.encode(tokenMessageDictionary)
@@ -147,12 +196,21 @@ extension ChristmasCarolMessages {
         
         let subjectTokens = tokenisation.collectLinguisticTokens(from: message.subject!)
         let contentTokens = tokenisation.collectLinguisticTokens(from: message.content!)
-        let tokenSet = Set(subjectTokens).union(Set(contentTokens))
+        var tokenSet = Set(subjectTokens).union(Set(contentTokens))
+        
+        if let ocr = message.ocrText {
+            let ocrTokens = tokenisation.collectLinguisticTokens(from: ocr)
+            tokenSet = tokenSet.union(Set(ocrTokens))
+        }
         
         tokenSet.forEach { token in
 
-            var messageNumbers = tokenMessageDictionary[token]
-            messageNumbers?.insert(Int64(message.messageID))
+            var messageNumbers = Set<Int64>()
+            if let numbers = tokenMessageDictionary[token] {
+                messageNumbers = numbers
+            }
+   //         var messageNumbers = tokenMessageDictionary[token]
+            messageNumbers.insert(Int64(message.messageID))
             tokenMessageDictionary[token] = messageNumbers
         }
     }

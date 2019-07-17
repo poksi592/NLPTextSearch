@@ -21,5 +21,6 @@ extension Message {
     @NSManaged public var messageID: Int64
     @NSManaged public var subject: String?
     @NSManaged public var attachmentFilename: String?
+    @NSManaged public var ocrText: String?
 
 }

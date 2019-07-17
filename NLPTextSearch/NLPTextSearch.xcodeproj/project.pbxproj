@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC50BB1C22DE321400B1D039 /* Vision.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50BB1B22DE321400B1D039 /* Vision.swift */; };
+		CC50BB2022DE59AE00B1D039 /* IMG_0792.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC50BB1D22DE59AD00B1D039 /* IMG_0792.jpg */; };
+		CC50BB2122DE59AE00B1D039 /* IMG_9486.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC50BB1E22DE59AE00B1D039 /* IMG_9486.jpg */; };
+		CC50BB2222DE59AE00B1D039 /* IMG_7822.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC50BB1F22DE59AE00B1D039 /* IMG_7822.jpg */; };
 		CCADA9AB22D396470092151C /* 10000_Words.txt in Resources */ = {isa = PBXBuildFile; fileRef = CCADA9AA22D396470092151C /* 10000_Words.txt */; };
 		CCADA9CA22D789790092151C /* IndexedMessages+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCADA9C422D789790092151C /* IndexedMessages+CoreDataClass.swift */; };
 		CCADA9CB22D789790092151C /* IndexedMessages+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCADA9C522D789790092151C /* IndexedMessages+CoreDataProperties.swift */; };
@@ -90,6 +94,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC50BB1B22DE321400B1D039 /* Vision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vision.swift; sourceTree = "<group>"; };
+		CC50BB1D22DE59AD00B1D039 /* IMG_0792.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0792.jpg; sourceTree = "<group>"; };
+		CC50BB1E22DE59AE00B1D039 /* IMG_9486.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_9486.jpg; sourceTree = "<group>"; };
+		CC50BB1F22DE59AE00B1D039 /* IMG_7822.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_7822.jpg; sourceTree = "<group>"; };
 		CCADA9AA22D396470092151C /* 10000_Words.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = 10000_Words.txt; sourceTree = "<group>"; };
 		CCADA9C422D789790092151C /* IndexedMessages+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "IndexedMessages+CoreDataClass.swift"; path = "NLPTextSearch/Model/Core Data/IndexedMessages+CoreDataClass.swift"; sourceTree = "<group>"; };
 		CCADA9C522D789790092151C /* IndexedMessages+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "IndexedMessages+CoreDataProperties.swift"; path = "NLPTextSearch/Model/Core Data/IndexedMessages+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -197,6 +205,9 @@
 		CCADA9D122D8900A0092151C /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				CC50BB1D22DE59AD00B1D039 /* IMG_0792.jpg */,
+				CC50BB1F22DE59AE00B1D039 /* IMG_7822.jpg */,
+				CC50BB1E22DE59AE00B1D039 /* IMG_9486.jpg */,
 				CCADAA4922DC83750092151C /* Bildschirmfoto 2019-04-09 um 20.06.14.png */,
 				CCADAA3F22DC83740092151C /* Bildschirmfoto 2019-05-17 um 13.51.02.png */,
 				CCADAA4F22DC83760092151C /* Bildschirmfoto 2019-06-24 um 16.15.23.png */,
@@ -256,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				CCE1AEA0227AF1DD007DB341 /* Tokenisation.swift */,
+				CC50BB1B22DE321400B1D039 /* Vision.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -450,6 +462,7 @@
 				CCADAA6122DC83780092151C /* IMG_2546.jpg in Resources */,
 				CCADAA6422DC83780092151C /* idiots-idiots-everywhere-made-on-imgur-22227665.png in Resources */,
 				CCADAA8322DC83780092151C /* IMG_0076.jpg in Resources */,
+				CC50BB2222DE59AE00B1D039 /* IMG_7822.jpg in Resources */,
 				CCADAA7122DC83780092151C /* DSC00527.jpg in Resources */,
 				CCADAA6922DC83780092151C /* Foto am 13.02.19 um 09.57.jpg in Resources */,
 				CCADAA7D22DC83780092151C /* IMG_4344.jpg in Resources */,
@@ -469,6 +482,7 @@
 				CCADAA6222DC83780092151C /* IMG_0938.jpg in Resources */,
 				CCADAA7C22DC83780092151C /* IMG_3870.jpg in Resources */,
 				CCADAA6622DC83780092151C /* Bildschirmfoto 2019-05-17 um 13.51.02.png in Resources */,
+				CC50BB2122DE59AE00B1D039 /* IMG_9486.jpg in Resources */,
 				CCADAA7422DC83780092151C /* IMG_1387.jpg in Resources */,
 				CCADAA6A22DC83780092151C /* IMG_0890.jpg in Resources */,
 				CCADAA7322DC83780092151C /* IMG_3787.jpg in Resources */,
@@ -476,6 +490,7 @@
 				CCADAA8522DC83780092151C /* IMG_0076.png in Resources */,
 				CCADAA6522DC83780092151C /* DSC00535.jpg in Resources */,
 				CCADAA7822DC83780092151C /* DSC00535 (1).jpg in Resources */,
+				CC50BB2022DE59AE00B1D039 /* IMG_0792.jpg in Resources */,
 				CCADAA6322DC83780092151C /* IMG_3784.jpg in Resources */,
 				CCADAA6022DC83780092151C /* IMG_1043.jpg in Resources */,
 				CCE1AE73227AE4DB007DB341 /* Main.storyboard in Resources */,
@@ -518,6 +533,7 @@
 				CCDDD543227C9F1900578E33 /* MessageListViewController.swift in Sources */,
 				CCDDD545227CA24100578E33 /* MessageListCell.swift in Sources */,
 				CCDDD549227F614C00578E33 /* MessageDetailViewController.swift in Sources */,
+				CC50BB1C22DE321400B1D039 /* Vision.swift in Sources */,
 				CCADA9CD22D789790092151C /* Message+CoreDataProperties.swift in Sources */,
 				CCE1AE76227AE4DB007DB341 /* NLPTextSearch.xcdatamodeld in Sources */,
 				CCE1AE9F227AE59B007DB341 /* Persistence.swift in Sources */,
@@ -706,6 +722,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NLPTextSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -723,6 +740,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NLPTextSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
