@@ -46,6 +46,8 @@ class MessageDetailViewController: UIViewController {
             
             let image = UIImage(named: imagePath)
             photo.image = image
+            print("Image: \(imagePath)")
+            print("Message ID: \(selectedMessageID)")
         }
     }
     

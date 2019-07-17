@@ -33,7 +33,7 @@ class MessageListViewController: UITableViewController, UISearchControllerDelega
     func setupFetchResultsController() {
         
         let managedObjectContext = Persistence.shared.persistentContainer.viewContext
-        messageFetchRequest.fetchLimit = 1000
+        messageFetchRequest.fetchLimit = 100
         messageFetchRequest.sortDescriptors = [NSSortDescriptor(key: "messageID", ascending: true)]
         
         messageFetchedResultsController = NSFetchedResultsController(fetchRequest: messageFetchRequest,
@@ -108,7 +108,7 @@ extension MessageListViewController: UISearchResultsUpdating {
                 mailIDs.update(with: indexedMessage.messageID)
             }
         }
-        return Array(mailIDs)
+        return Array(mailIDs).sorted()
     }
 }
 
@@ -138,7 +138,7 @@ extension MessageListViewController {
                                                                  size: 18.0,
                                                                  bold: false,
                                                                  color: UIColor.cyan)
-        if let _ = ChristmasCarolMessages.shared.imagePath(forMessageID: indexPath.row) {
+        if message.attachmentFilename != nil {
             cell.attachmentIcon.isHidden = false
         } else {
             cell.attachmentIcon.isHidden = true
@@ -149,7 +149,9 @@ extension MessageListViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let selectedCell = tableView.cellForRow(at: indexPath) as! MessageListCell
-        selectedRow = indexPath.row
+        selectedRow = Int(searchedMessageIndexes[indexPath.row])
+//        selectedRow = indexPath.row
+        print("Selected Row: \(indexPath.row)")
         performSegue(withIdentifier: "messageDetailSegue", sender: selectedCell)
     }
 }

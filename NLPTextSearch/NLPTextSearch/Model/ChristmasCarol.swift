@@ -124,6 +124,8 @@ extension ChristmasCarolMessages {
             
             tokenizeMessage(messageObject)
         }
+        
+        print("TOken message dict")
        
         tokenMessageDictionary.forEach { (key, value) in
             
